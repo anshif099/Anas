@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Muhammed Anas A.V - Performance Marketer in Malappuram, Kerala. Meta Ads, Google Ads and performance marketing that bring leads and measurable results.">
+<title>Anas AV | Performance Marketer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ================= COLOUR SETTINGS =================
+   Colours maattan ee block mathram maattiyal mathi */
+:root{
+    --bg:#050e24;
+    --bg-rgb:5,14,36;
+    --text:#f1f5ff;
+    --accent:#2f80ff;
+    --accent-rgb:47,128,255;
+    --on-accent:#ffffff;
+    --card:#0a1a3a;
+    --card-2:#0d2048;
+    --border:#163058;
+    --border-strong:#1f4580;
+    --muted:#8fa3c7;
+    --soft:#12305f;
+    --font-display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+    --font-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+    --font-data:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--font-body);background:radial-gradient(ellipse 700px 600px at 85% 280px,rgba(var(--accent-rgb),.28),transparent 70%),radial-gradient(ellipse 600px 500px at 5% 700px,rgba(var(--accent-rgb),.12),transparent 70%),var(--bg);background-repeat:no-repeat;color:var(--text);line-height:1.6;font-size:16px;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+h1,h2,h3{font-family:var(--font-display);line-height:1.1;letter-spacing:-.01em}
+.container{width:90%;max-width:1150px;margin:auto}
+section{padding:90px 0 10px}
+.mono{font-family:var(--font-data);font-variant-numeric:tabular-nums}
+
+/* ================= NAVBAR ================= */
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(var(--bg-rgb),.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding-top:env(safe-area-inset-top,0px)}
+.navbar{width:90%;max-width:1150px;height:72px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{color:var(--accent);font-family:var(--font-display);font-size:24px;font-weight:700}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:#c3d0ea;font-size:15px;transition:.3s}
+.nav-links a:hover{color:var(--accent)}
+
+/* ================= BUTTONS ================= */
+.btn{display:inline-block;padding:13px 26px;border:1px solid var(--accent);border-radius:30px;color:var(--accent);font-weight:600;font-size:15px;transition:.3s;font-family:var(--font-body)}
+.btn:hover{background:var(--accent);color:var(--on-accent)}
+.btn-primary{background:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{box-shadow:0 10px 30px rgba(var(--accent-rgb),.35);transform:translateY(-2px)}
+.btn-icon{margin-right:8px}
+.nav-cta{padding:9px 20px;font-size:14px}
+
+/* ================= COVER HERO ================= */
+#home{min-height:100vh;display:flex;align-items:center;padding:110px 0 60px}
+.hero{width:90%;max-width:1150px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.cover-tag{display:inline-block;padding:7px 16px;border:1px solid var(--border-strong);background:rgba(var(--accent-rgb),.1);border-radius:8px;color:var(--accent);font-size:13px;font-weight:700;letter-spacing:2px;margin-bottom:22px;font-family:var(--font-data)}
+.cover-name{font-size:clamp(46px,8vw,84px);letter-spacing:-2px;margin-bottom:14px}
+.cover-skills{font-size:20px;font-weight:600;color:var(--accent);margin-bottom:20px}
+.cover-skills i{font-style:normal;color:#4a5f86;margin:0 8px}
+.hero p.lede{color:var(--muted);font-size:18px;max-width:580px}
+.hero-buttons{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.hero-loc{margin-top:22px;font-family:var(--font-data);font-size:13px;color:var(--muted)}
+.cover-photo{position:relative;width:380px;height:440px;max-width:100%;margin:auto;border-radius:28px;overflow:hidden;border:1px solid var(--border-strong);background:linear-gradient(160deg,#10285a,#071433);box-shadow:0 0 60px rgba(var(--accent-rgb),.25);display:flex;align-items:center;justify-content:center;font-size:110px}
+.cover-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover-caption{position:absolute;left:0;right:0;bottom:0;padding:60px 24px 22px;background:linear-gradient(to top,rgba(5,14,36,.95),transparent);font-size:20px;font-weight:700;font-family:var(--font-display)}
+.cover-caption span{display:block;font-size:14px;font-weight:400;color:var(--accent);font-family:var(--font-body)}
+
+/* ================= LEDGER (headline results) ================= */
+.ledger{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-top:-30px;position:relative;z-index:2;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.ledger>div{padding:26px 22px;display:grid;gap:6px;align-content:start;border-right:1px solid var(--border)}
+.ledger>div:last-child{border-right:0}
+.ledger .num{font-family:var(--font-data);font-size:clamp(28px,4vw,38px);font-weight:600;color:var(--accent);line-height:1.1}
+.ledger .num small{font-size:.5em;color:var(--muted);font-weight:500}
+.ledger .what{font-size:14px;color:var(--muted)}
+
+/* ================= SECTION HEADS ================= */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.eyebrow{color:var(--accent);font-family:var(--font-data);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.sec-head h2{font-size:clamp(30px,4.5vw,44px);font-weight:600}
+.sec-head p{color:var(--muted);max-width:46ch;font-size:15px}
+
+/* ================= SERVICES ================= */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px 24px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 15px 35px rgba(var(--accent-rgb),.12)}
+.card i{font-style:normal;font-size:36px;display:block;margin-bottom:12px}
+.card h3{font-size:20px;margin-bottom:8px;font-weight:600}
+.card p{color:var(--muted);font-size:14px}
+
+/* ================= CAMPAIGN SHEETS ================= */
+.sheets{display:grid;gap:20px}
+.sheet{background:var(--card);border:1px solid var(--border);border-radius:20px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);overflow:hidden;transition:.3s}
+.sheet:hover{border-color:var(--accent)}
+.sheet .meta{padding:26px;display:grid;gap:14px;align-content:start;border-right:1px solid var(--border)}
+.platform{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-data);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.platform i{width:10px;height:10px;background:var(--accent);display:inline-block;border-radius:2px}
+.sheet h3{font-size:24px;font-weight:600}
+.sheet dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:14px}
+.sheet dt{color:var(--muted)}
+.sheet dd{min-width:0}
+.status{font-family:var(--font-data);font-size:12px;padding:2px 10px;border-radius:30px;background:rgba(var(--accent-rgb),.18);color:#9cc2ff;border:1px solid var(--border-strong)}
+.status.live{background:rgba(34,197,94,.15);color:#6ee7a0;border-color:rgba(34,197,94,.4)}
+.note{font-size:13px;color:var(--muted)}
+.sheet .body{padding:26px;display:grid;gap:20px;align-content:start;min-width:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--border);gap:1px}
+.stats>div{padding:13px 14px;display:grid;gap:2px;background:var(--card-2)}
+.stats .k{font-family:var(--font-data);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stats .v{font-family:var(--font-data);font-size:22px;font-weight:600}
+.stats .v.hl{color:var(--accent)}
+.label{font-family:var(--font-data);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.funnel{display:grid;gap:8px}
+.funnel .row{display:grid;grid-template-columns:110px minmax(0,1fr) 56px;align-items:center;gap:12px;font-size:13px}
+.track{height:14px;background:var(--soft);border-radius:4px;overflow:hidden;display:block}
+.fill{height:100%;background:linear-gradient(90deg,#1d5fd1,var(--accent));display:block;border-radius:4px}
+.funnel .val{font-family:var(--font-data);text-align:right}
+.funnel .na{color:var(--muted)}
+
+.chart{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:26px;margin-top:20px;display:grid;gap:14px}
+.chart .row{display:grid;grid-template-columns:minmax(120px,220px) minmax(0,1fr) 64px;gap:12px;align-items:center;font-size:14px}
+.chart .track{position:relative;height:18px}
+.chart .val{font-family:var(--font-data);text-align:right;font-weight:500}
+
+/* ================= TOOLKIT ================= */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:26px;display:grid;gap:14px;align-content:start;min-width:0}
+.panel h3{font-size:20px;font-weight:600}
+.panel p{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:13px;padding:5px 12px;border:1px solid var(--border-strong);border-radius:30px;background:rgba(var(--accent-rgb),.08);color:#c3d0ea}
+
+/* ================= CAREER ================= */
+.log{display:grid}
+.entry{display:grid;grid-template-columns:130px minmax(0,1fr);gap:8px 28px;padding:26px 0;border-top:1px solid var(--border)}
+.entry:last-child{border-bottom:1px solid var(--border)}
+.entry .when{font-family:var(--font-data);font-size:13px;color:var(--accent);padding-top:5px}
+.entry h3{font-size:22px;font-weight:600}
+.entry .org{color:var(--muted);font-size:15px;margin-bottom:10px}
+.entry ul{padding-left:18px;display:grid;gap:6px;font-size:15px;color:#c3d0ea;max-width:72ch}
+.entry li::marker{color:var(--accent)}
+.simple p{margin-bottom:10px}
+.simple p b{font-weight:600}
+
+/* ================= CONTACT ================= */
+.contact{background:linear-gradient(135deg,#0b2556,#0a1a3a);border:1px solid var(--border-strong);border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;gap:28px;text-align:center;justify-items:center}
+.contact h2{font-size:clamp(30px,5vw,50px);font-weight:600;max-width:18ch}
+.contact h2 span{color:var(--accent)}
+.contact>p{color:var(--muted);max-width:520px}
+.rows{display:grid;gap:12px;width:100%;max-width:480px;text-align:left}
+.line{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:rgba(var(--bg-rgb),.4)}
+.line .k{font-family:var(--font-data);font-size:12px;letter-spacing:.08em;text-transform:uppercase;width:70px;color:var(--muted)}
+.line .v{font-family:var(--font-data);font-size:15px;overflow-wrap:anywhere;min-width:0;flex:1}
+.copy{flex:none;font-family:var(--font-data);font-size:12px;background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:30px;padding:4px 12px;cursor:pointer;transition:.2s}
+.copy:hover{background:var(--accent);color:var(--on-accent)}
+footer{text-align:center;padding:34px 20px 100px;border-top:1px solid var(--border);margin-top:70px;color:#6d7fa3;font-size:13px}
+
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:1100;background:#25d366;color:#fff;font-weight:700;font-size:14px;padding:13px 20px;border-radius:40px;box-shadow:0 8px 24px rgba(37,211,102,.4);transition:.2s}
+.wa:hover{transform:translateY(-3px)}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.js .rv.on{opacity:1;transform:none}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:950px){
+    .nav-links{display:none}
+    .hero{grid-template-columns:1fr;text-align:center}
+    .hero p.lede{margin:auto}
+    .hero-buttons{justify-content:center}
+    .cover-skills{font-size:17px}
+    .grid3{grid-template-columns:1fr 1fr}
+    .sheet{grid-template-columns:minmax(0,1fr)}
+    .sheet .meta{border-right:0;border-bottom:1px solid var(--border)}
+}
+@media(max-width:650px){
+    section{padding:70px 0 10px}
+    .cover-skills{font-size:15px}
+    .cover-photo{width:300px;height:360px}
+    .grid3{grid-template-columns:1fr}
+    .ledger>div{border-right:0;border-bottom:1px solid var(--border)}
+    .ledger>div:last-child{border-bottom:0}
+    .entry{grid-template-columns:minmax(0,1fr)}
+    .chart .row{grid-template-columns:minmax(0,1fr) 56px}
+    .chart .row .name{grid-column:1/-1}
+    .funnel .row{grid-template-columns:84px minmax(0,1fr) 44px;gap:8px}
+    .nav-cta{padding:8px 14px;font-size:13px}
+    .logo{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.services-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 12px 32px;scrollbar-width:thin;scrollbar-color:var(--accent) transparent;overscroll-behavior-x:contain}
+.service-card{flex:0 0 calc((100% - 48px)/3);min-width:0;min-height:250px;scroll-snap-align:start;opacity:.7;transform:scale(.97);transition:transform .35s,opacity .35s,border-color .35s,box-shadow .35s}
+.service-card.is-active,.service-card:hover{opacity:1;transform:translateY(-10px) scale(1);border-color:var(--accent);box-shadow:0 16px 32px rgba(var(--accent-rgb),.2)}
+.service-logo{display:grid;place-items:center;width:68px;height:68px;background:white;border-radius:16px;margin-bottom:22px}
+.service-logo img{width:48px;height:48px;object-fit:contain}
+.services-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 12px}
+.services-count{font:13px var(--font-data);color:var(--muted)}
+.services-controls button{background:var(--card);color:var(--text);border:1px solid var(--border-strong);border-radius:24px;padding:10px 16px;min-height:44px;cursor:pointer;font:14px var(--font-body)}
+.services-controls button:hover{border-color:var(--accent)}
+.services-controls button:focus-visible,.services-track:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:950px){.service-card{flex-basis:calc((100% - 24px)/2)}}
+@media(max-width:650px){.service-card{flex-basis:88%}}
+@media(prefers-reduced-motion:reduce){.service-card{transition:none}}
+/* Animated toolkit workbench */
+.toolkit-lab{display:grid;grid-template-columns:1.15fr 1fr;overflow:hidden;border:1px solid var(--border-strong);border-radius:28px;background:linear-gradient(125deg,#102752,#08152e);margin-bottom:24px}
+.lab-scene{position:relative;min-height:500px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 60%,#1e4b8255,transparent 65%);perspective:900px}
+.lab-grid{position:absolute;inset:40% -50% -65%;background:linear-gradient(#4c8ee01c 1px,transparent 1px),linear-gradient(90deg,#4c8ee01c 1px,transparent 1px);background-size:36px 36px;transform:rotateX(60deg);mask-image:linear-gradient(transparent,#000,transparent)}
+.lab-status{position:absolute;top:26px;left:26px;font:10px var(--font-data);letter-spacing:2px;color:#94b5df;display:flex;align-items:center;gap:8px}
+.lab-status>span,.lab-spark{display:inline-block;width:6px;height:6px;background:#6ce4c1;border-radius:50%;box-shadow:0 0 12px #6ce4c1}
+.lab-platform{position:absolute;width:340px;height:130px;left:50%;top:64%;transform:translateX(-50%) rotate(-6deg);border-radius:50%;background:linear-gradient(#21467a,#09162b);box-shadow:0 12px 0 #071125,0 13px 0 #35659b,0 35px 35px #0005}
+.lab-bot{position:absolute;top:142px;left:calc(50% - 80px);width:160px;height:210px;z-index:3;animation:bot-bob 3s ease-in-out infinite}
+.bot-head{position:absolute;left:8px;top:5px;width:142px;height:112px;border-radius:38px;background:linear-gradient(125deg,#eff9ff 3%,#a3c5ed 55%,#5476ae);box-shadow:inset -10px -8px 14px #24457366,inset 3px 4px 5px #fff9,6px 9px 20px #0004;transform:rotate(-7deg)}
+.bot-face{position:absolute;inset:22px 15px 19px;border-radius:25px;background:linear-gradient(135deg,#091326,#15345b);box-shadow:inset 0 4px 8px #0009;display:flex;justify-content:center;align-items:center;gap:24px}
+.bot-face b{width:13px;height:21px;background:#73e7ff;border-radius:12px;box-shadow:0 0 14px #35bcff;animation:bot-blink 5s infinite}
+.bot-face>span{position:absolute;width:18px;height:8px;bottom:13px;border-bottom:2px solid #73e7ff;border-radius:50%}
+.bot-antenna{position:absolute;left:72px;top:-23px;width:5px;height:32px;background:#86b3e7;transform:rotate(-7deg)}
+.bot-antenna:before{content:'';position:absolute;top:-5px;left:-5px;width:15px;height:15px;border-radius:50%;background:#74f0d0;box-shadow:0 0 18px #74f0d0}
+.bot-body{position:absolute;top:122px;left:27px;width:110px;height:90px;border-radius:28px 28px 40px 40px;background:linear-gradient(110deg,#559bff,#245bb0 65%,#14346d);box-shadow:inset 4px 3px 8px #b1d5ff66,8px 6px 15px #0004;text-align:center;padding-top:15px}
+.bot-body span{font:700 27px var(--font-display);color:#b9e5ff;text-shadow:0 0 15px #75cfff}
+.bot-arm{position:absolute;top:125px;width:33px;height:82px;border-radius:24px;background:linear-gradient(90deg,#c8e4ff,#688dbb);transform-origin:50% 16px;box-shadow:inset -5px -3px 8px #24457355}
+.arm-left{left:-8px;transform:rotate(30deg);animation:bot-work 1.6s ease-in-out infinite}
+.arm-right{right:-10px;transform:rotate(-35deg);animation:bot-work 1.6s .8s ease-in-out infinite reverse}
+.lab-desk{position:absolute;left:calc(50% - 128px);top:340px;width:256px;height:28px;z-index:5;border-radius:12px;background:linear-gradient(#8faed0,#3d5e86);box-shadow:0 12px 0 #172b48,0 26px 25px #0005;transform:skewY(-4deg)}
+.lab-desk:after{content:'';position:absolute;top:35px;left:28px;width:12px;height:54px;background:#29476b;box-shadow:183px 0 #29476b}
+.lab-monitor{position:absolute;left:calc(50% - 32px);top:246px;width:148px;height:112px;z-index:6;background:linear-gradient(145deg,#142e52,#091b34);border:4px solid #7195be;border-radius:12px;transform:rotateY(-16deg) rotateZ(-4deg);box-shadow:8px 5px 0 #324e73,10px 15px 25px #0005;padding:8px}
+.monitor-top{display:flex;gap:3px}.monitor-top span{width:3px;height:3px;background:#7698c7;border-radius:50%}
+.monitor-title{font:7px var(--font-data);color:#b6d3f6;margin:8px 0}
+.monitor-chart{height:44px;display:flex;gap:7px;align-items:flex-end;border-bottom:1px solid #395e86;padding:0 7px}
+.monitor-chart i{width:9px;height:40%;border-radius:3px 3px 0 0;background:linear-gradient(#6ce4c1,#2b8cbb);transform-origin:bottom;animation:chart-build 2.4s ease-in-out infinite alternate}
+.monitor-chart i:nth-child(2){height:60%;animation-delay:.2s}.monitor-chart i:nth-child(3){height:45%;animation-delay:.4s}.monitor-chart i:nth-child(4){height:75%;animation-delay:.6s}.monitor-chart i:nth-child(5){height:65%;animation-delay:.8s}.monitor-chart i:nth-child(6){height:95%;animation-delay:1s}
+.monitor-lines{display:flex;gap:6px;margin-top:7px}.monitor-lines i{height:3px;width:34px;border-radius:3px;background:#345e88}
+.lab-orbit{position:absolute;z-index:7;display:flex;align-items:center;gap:9px;padding:10px 13px;background:linear-gradient(135deg,#f9fcff,#c1d7f0);border:1px solid #fff9;border-radius:16px;box-shadow:5px 7px 0 #2c4c7488,0 15px 25px #0003;color:#18335b;animation:tool-float 4s ease-in-out infinite;font-size:11px;font-weight:600}
+.lab-orbit img{object-fit:contain}.orbit-meta{left:8%;top:105px;transform:rotate(-8deg)}.orbit-google{right:7%;top:92px;animation-delay:-1s}.orbit-analytics{left:5%;top:280px;animation-delay:-2s}.orbit-wordpress{right:4%;top:365px;animation-delay:-3s}
+.lab-caption{position:absolute;bottom:22px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:9px;font:10px var(--font-data);color:#a8c2e3;letter-spacing:.03em}
+.lab-intro{padding:54px 36px;align-self:center}.lab-intro h3{font-size:clamp(28px,3.4vw,40px);line-height:1.12;margin:14px 0 20px}.lab-intro h3>span{color:#83b8ff}.lab-intro>p{font-size:15px;color:var(--muted);max-width:38ch}
+.lab-modes{display:grid;margin-top:25px;gap:8px}.lab-modes button{display:flex;align-items:center;gap:14px;width:100%;border:1px solid transparent;border-bottom-color:var(--border-strong);border-radius:9px;background:transparent;color:var(--muted);padding:12px;font:15px var(--font-body);text-align:left;cursor:pointer;transition:.25s}
+.lab-modes button>span{font:11px var(--font-data);color:#6288b6}.lab-modes button>b{margin-left:auto;font-weight:400}.lab-modes button.is-selected{background:#2f80ff18;border-color:#2f80ff77;color:#e1eeff}.lab-modes button:hover{color:white;background:#2f80ff18}
+.lab-motion{font:11px var(--font-data);background:none;color:var(--muted);border:0;border-bottom:1px solid var(--border-strong);cursor:pointer;padding:5px 0;margin-top:20px}.lab-motion:focus-visible,.lab-modes button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.toolkit-details{grid-template-columns:1fr 1fr}.toolkit-details .panel{background:linear-gradient(145deg,#0b1d3d,#08152e)}.toolkit-details .panel:nth-child(4){align-content:center}.toolkit-lab.is-paused *{animation-play-state:paused!important}
+@keyframes bot-bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes bot-work{0%,100%{rotate:-8deg}50%{rotate:14deg}}
+@keyframes bot-blink{0%,43%,47%,100%{scale:1 1}45%{scale:1 .15}}
+@keyframes tool-float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+@keyframes chart-build{from{scale:1 .45;opacity:.6}to{scale:1 1;opacity:1}}
+@media(max-width:950px){.toolkit-lab{grid-template-columns:1fr}.lab-scene{min-height:480px}.lab-intro{padding:30px}.lab-intro>p{max-width:60ch}}
+@media(max-width:650px){.toolkit-details{grid-template-columns:1fr}.lab-scene{min-height:465px}.lab-orbit{padding:8px;gap:5px;font-size:9px}.lab-orbit img{width:26px;height:26px}.orbit-meta{left:5%;top:95px}.orbit-google{right:5%;top:75px}.orbit-analytics{left:3%;top:260px}.orbit-wordpress{right:4%;top:380px}.lab-caption{bottom:10px;font-size:9px}.lab-status{font-size:9px;left:20px}}
+@media(prefers-reduced-motion:reduce){.toolkit-lab *{animation:none!important;transition:none!important}}
+.results-room{position:relative;border:1px solid #254166;border-radius:28px;overflow:hidden;background:radial-gradient(ellipse at 15% 35%,#29465b77,transparent 50%),linear-gradient(#14263b,#0b1527);isolation:isolate;transition:background .5s}
+.room-wall{position:absolute;inset:0;z-index:-1}.room-window{position:absolute;top:90px;left:5%;width:120px;height:180px;border:7px solid #253d57;background:linear-gradient(145deg,#48728b,#152a46);box-shadow:inset 0 0 40px #7cb0d044,0 0 80px #6fb4e422}.room-window:before,.room-window:after{content:'';position:absolute;background:#253d57}.room-window:before{width:6px;height:100%;left:48%}.room-window:after{height:6px;width:100%;top:48%}
+.room-art{position:absolute;right:5%;top:100px;padding:20px;background:#102137;border:6px solid #30445c;transform:rotate(3deg);box-shadow:4px 8px 10px #0003}.room-art span{font:700 19px/1.1 var(--font-display);color:#9fb9ce}.room-shelf{position:absolute;right:4%;top:285px;width:140px;height:9px;background:#5b483e;box-shadow:0 10px 15px #0006}.room-shelf span{position:absolute;bottom:9px;width:18px;height:46px;background:#49648c;left:16px;transform:rotate(-8deg)}.room-shelf span:nth-child(2){left:36px;height:54px;background:#6f8a82;transform:rotate(0)}.room-shelf span:nth-child(3){left:57px;height:40px;background:#ac8c67;transform:rotate(8deg)}
+.room-toolbar{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;gap:15px;background:#07122055;position:relative;z-index:8}.room-toolbar>span{font:10px var(--font-data);letter-spacing:2px;color:#acc5df}.room-toolbar>span i{display:inline-block;width:6px;height:6px;background:#73d4b9;border-radius:50%;margin-right:7px}.room-toolbar button{font:12px var(--font-body);color:#dbe9ff;background:#16304c;border:1px solid #395976;border-radius:20px;padding:9px 13px;cursor:pointer}.room-toolbar button:hover{background:#284c74}.room-toolbar>div{display:flex;gap:8px}
+.room-workspace{position:relative;padding:62px 15% 90px;perspective:1400px}.results-laptop{position:relative;z-index:4;max-width:850px;margin:auto;transition:max-width .5s}.laptop-lid{position:relative;border:8px solid #263344;border-bottom-width:11px;border-radius:20px 20px 9px 9px;background:#060d18;box-shadow:inset 0 0 0 1px #667385,0 20px 65px #0008;padding-top:12px;transform:rotateX(3deg)}.laptop-camera{position:absolute;left:50%;top:3px;width:5px;height:5px;border-radius:50%;background:#466280;box-shadow:0 0 0 2px #111c2b}.laptop-appbar{display:flex;align-items:center;justify-content:space-between;gap:8px;background:#15233a;padding:10px 14px;color:#8ca9cb;font:9px var(--font-data);letter-spacing:.03em}.app-dots{color:#8099b8;font-size:8px}.app-live{color:#8bddbd}
+.laptop-screen{height:420px;overflow-y:auto;background:#071329;padding:22px;scrollbar-width:thin;scrollbar-color:#4f7fb5 #101f35;scroll-behavior:smooth;scroll-padding-top:16px;position:relative}.laptop-screen:focus-visible{outline:2px solid #76b0ff;outline-offset:-3px}.screen-welcome{padding:8px 0 24px}.screen-welcome h3{font-size:30px;line-height:1.12}.screen-welcome p{font-size:13px;color:var(--muted);margin:12px 0}.screen-shortcuts{display:flex;flex-wrap:wrap;gap:6px}.screen-shortcuts button{padding:6px 9px;border-radius:7px;border:1px solid #2b4c75;background:#10264a;color:#bcd4f4;font:10px var(--font-data);cursor:pointer}.screen-shortcuts button:hover{background:#205194}.laptop-screen .sheet{grid-template-columns:1fr;border-radius:12px}.laptop-screen .sheet .meta{border-right:0;border-bottom:1px solid var(--border);padding:18px;gap:10px}.laptop-screen .sheet .body{padding:18px;gap:14px}.laptop-screen .sheet h3{font-size:22px}.laptop-screen .sheet dl{font-size:12px}.laptop-screen .platform{font-size:10px}.laptop-screen .stats{grid-template-columns:repeat(2,minmax(0,1fr))}.laptop-screen .stats .v{font-size:20px;overflow-wrap:anywhere}.laptop-screen .stats .k{font-size:9px}.laptop-screen .chart{padding:16px;border-radius:12px}.laptop-screen .chart .row{grid-template-columns:minmax(0,1fr) 55px;font-size:12px}.laptop-screen .chart .row .name{grid-column:1/-1}.laptop-screen .note{font-size:11px}.laptop-screen .funnel .row{grid-template-columns:80px minmax(0,1fr) 40px;gap:7px;font-size:11px}.screen-end{text-align:center;color:#7993b6;font:10px var(--font-data);padding:25px 0 10px}.laptop-bottom{display:flex;justify-content:space-between;padding:8px 12px;color:#90a9ca;font:9px var(--font-data);background:#101b2c}.screen-progress{color:#89d5bd}
+.laptop-keyboard{height:64px;position:relative;background:linear-gradient(#7e8b9f,#4e5d73);margin:0 -6%;clip-path:polygon(5.4% 0,94.6% 0,100% 100%,0 100%);border-radius:0 0 8px 8px;transform:rotateX(25deg);transform-origin:top;box-shadow:inset 0 2px #b2bdcb}.laptop-keyboard>div{position:absolute;left:15%;right:15%;top:8px;height:25px;border-radius:3px;background:repeating-linear-gradient(90deg,transparent 0 13px,#7e8b9f 13px 16px),repeating-linear-gradient(#1b2636 0 5px,#7e8b9f 5px 8px);transform:perspective(200px) rotateX(20deg)}.laptop-keyboard>span{position:absolute;bottom:6px;left:40%;width:20%;height:17px;border:1px solid #a3afc0;border-radius:3px}.laptop-edge{height:7px;background:linear-gradient(#8895a8,#354257);margin:-6px -6% 0;border-radius:0 0 15px 15px;box-shadow:0 12px 15px #0008}
+.room-desk{position:absolute;bottom:38px;left:0;right:0;height:185px;z-index:0;background:repeating-linear-gradient(2deg,transparent 0 13px,#dcc0a009 14px 15px),linear-gradient(100deg,#5c4436,#8c6c50 50%,#4c372c);transform:perspective(700px) rotateX(28deg);border-bottom:16px solid #3b2a24;box-shadow:0 25px 30px #0006}.room-lamp{position:absolute;left:6%;bottom:180px;width:60px;height:170px;z-index:3;border-bottom:8px solid #405066;border-radius:10px}.room-lamp>i{position:absolute;left:28px;top:10px;width:7px;height:150px;background:#526175;transform:rotate(12deg)}.room-lamp>b{position:absolute;top:0;left:10px;width:65px;height:40px;border-radius:40px 40px 8px 8px;background:linear-gradient(110deg,#8297b2,#35465d);transform:rotate(-15deg);box-shadow:0 30px 65px #ffe0a322}.room-plant{position:absolute;right:6%;bottom:170px;width:60px;height:130px;z-index:3}.room-plant b{position:absolute;bottom:0;width:60px;height:53px;background:linear-gradient(90deg,#b2a490,#756951);border-radius:6px 6px 24px 24px}.room-plant i{position:absolute;left:25px;bottom:45px;width:23px;height:85px;background:linear-gradient(90deg,#305b4d,#6b9577);border-radius:90% 0 90% 0;transform:rotate(-35deg);transform-origin:bottom}.room-plant i:nth-child(2){transform:rotate(24deg);height:100px}.room-plant i:nth-child(3){transform:rotate(65deg);height:65px}.room-cup{position:absolute;left:7%;bottom:100px;width:47px;height:52px;background:linear-gradient(90deg,#c2ccd4,#7e8d9e);border-radius:4px 4px 19px 19px;z-index:5;border-top:5px solid #3b3432;transform:rotate(-5deg);box-shadow:4px 8px 15px #0004}.room-cup:after{content:'';position:absolute;right:-16px;top:7px;width:18px;height:26px;border:5px solid #8999aa;border-left:0;border-radius:0 15px 15px 0}.room-notebook{position:absolute;right:4%;bottom:100px;width:85px;height:110px;z-index:3;background:#263b54;border-left:5px solid #122239;border-radius:5px;transform:rotate(15deg) skewY(-10deg);box-shadow:4px 6px #a5a496,9px 12px 15px #0005;padding:14px 8px}.room-notebook span{font:12px var(--font-display);color:#aac4df}.room-help{position:relative;margin:0;padding:0 24px 24px;text-align:center;color:#94aeca;font-size:12px}
+.results-room.lights-on{background:radial-gradient(ellipse at 15% 25%,#f5d69a66,transparent 60%),linear-gradient(#496079,#293c53)}.lights-on .room-lamp>b{box-shadow:0 45px 100px 40px #ffe0a344}.results-room.screen-enlarged .room-workspace{padding:30px 5% 70px}.results-room.screen-enlarged .results-laptop{max-width:100%}.screen-enlarged .laptop-screen{height:min(68vh,700px)}.screen-enlarged .room-plant,.screen-enlarged .room-lamp,.screen-enlarged .room-cup,.screen-enlarged .room-notebook{opacity:0;pointer-events:none}
+@media(max-width:650px){.room-toolbar{padding:14px;flex-wrap:wrap}.room-toolbar>span{font-size:9px}.room-toolbar button{font-size:11px}.room-workspace{padding:40px 5% 60px}.room-window{width:70px;height:110px;top:120px}.room-art,.room-shelf,.room-lamp,.room-plant,.room-cup,.room-notebook{display:none}.laptop-lid{border-width:5px}.laptop-screen{height:440px;padding:12px}.laptop-appbar{font-size:7px;padding:9px 6px}.app-live{display:none}.screen-welcome h3{font-size:25px}.laptop-bottom{font-size:8px;padding:8px}.room-desk{height:135px;bottom:24px}.room-help{font-size:11px;padding:0 15px 20px}.laptop-keyboard{height:45px}.laptop-keyboard>div{height:17px}.laptop-keyboard>span{height:10px}.results-room.screen-enlarged .room-workspace{padding:20px 2% 50px}}
+@media(prefers-reduced-motion:reduce){.laptop-screen{scroll-behavior:auto}.results-room,.results-laptop{transition:none}}
+/* Full-screen room: a small laptop in a moonlit workspace. */
+.room-entry{width:100%;min-height:340px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:flex-end;border:1px solid var(--border-strong);border-radius:26px;padding:44px;background:radial-gradient(ellipse at 20% 40%,#2454a477,transparent 55%),linear-gradient(125deg,#10264c,#071329);color:var(--text);text-align:left;cursor:pointer;font-family:var(--font-body)}
+.entry-window{position:absolute;left:8%;top:35px;width:34%;height:210px;border:9px solid #344e73;background:radial-gradient(circle at 73% 24%,#dbebff 0 14px,transparent 15px),radial-gradient(circle,#9cc4ff 1px,transparent 2px),linear-gradient(#0a1738,#244477);background-size:auto,33px 41px,auto;box-shadow:0 0 60px #387fff22}.entry-window:before,.entry-window:after{content:'';position:absolute;background:#344e73}.entry-window:before{width:6px;height:100%;left:50%}.entry-window:after{height:6px;width:100%;top:45%}
+.entry-laptop{position:absolute;left:19%;top:180px;width:120px;height:85px;border:5px solid #7c91af;border-radius:7px;background:linear-gradient(140deg,#0e2853,#2061ac);transform:perspective(500px) rotateY(-12deg);box-shadow:0 35px 0 -12px #607696,0 48px 45px #0008}.entry-laptop i{font:8px var(--font-data);color:#a8d4ff;display:block;margin:16px 10px}.entry-laptop:after{content:'';position:absolute;left:-35px;right:-35px;bottom:-35px;height:10px;background:#4b668b;border-radius:6px}.entry-copy{position:relative;display:grid;gap:14px;width:49%;z-index:2}.entry-copy strong{font:600 clamp(26px,4vw,44px)/1.05 var(--font-display)}.entry-copy>span:not(.eyebrow){color:var(--muted);font-size:14px}.entry-copy b{font-size:14px;color:#94c3ff}.room-entry:hover{border-color:#66a4ff;box-shadow:0 15px 55px #2f80ff20}.room-entry:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.room-dialog{position:fixed;inset:0;margin:0;width:100vw;max-width:none;height:100dvh;max-height:none;border:0;padding:0;background:#050e24;color:var(--text);overflow:hidden}.room-dialog::backdrop{background:#020814}.room-dialog .results-room{width:100%;height:100%;border:0;border-radius:0;background:radial-gradient(ellipse at 50% 40%,#264b7d55,transparent 65%),linear-gradient(90deg,#0c182e,#162a47 45%,#0b172c);display:flex;flex-direction:column}.room-dialog .room-toolbar{flex:none;padding:16px 25px;background:linear-gradient(#050e24dd,#050e2455)}
+.room-dialog .room-wall{z-index:-2}.room-dialog .room-window{display:block;top:12%;left:23%;width:54%;height:56%;border:12px solid #344c71;background:radial-gradient(circle at 74% 23%,#d5e7ff 0 23px,#85b5ff33 24px,transparent 35px),radial-gradient(circle at 25% 30%,#daeaff 1px,transparent 2px),radial-gradient(circle at 65% 65%,#a5caff 1px,transparent 2px),linear-gradient(#07122b,#1a3260 65%,#0b203b);background-size:auto,47px 61px,73px 41px,auto;box-shadow:0 0 90px #4c8bff22,inset 0 0 80px #0005}.room-dialog .room-window:after{top:30%}.room-dialog .room-art{right:4%;top:23%;display:block;transform:rotate(0);border-color:#2a405d;background:#0c1b33}.room-dialog .room-shelf{display:none}
+.room-curtains{position:absolute;left:19%;top:9%;width:62%;height:70%;pointer-events:none;z-index:-1;border-top:7px solid #5d7294}.room-curtains i{position:absolute;top:0;bottom:0;width:15%;background:repeating-linear-gradient(90deg,#162e51 0,#46658e 10%,#253e62 22%,#101e38 35%);box-shadow:5px 15px 20px #0005;transition:width 1s ease;clip-path:polygon(0 0,100% 0,96% 100%,5% 99%)}.room-curtains i:first-child{left:0;border-radius:0 0 16px 8px}.room-curtains i:last-child{right:0;border-radius:0 0 8px 16px}.curtains-closed .room-curtains i{width:50.5%}
+.room-dialog .room-workspace{flex:1;min-height:0;padding:0;perspective:1500px}.room-dialog .results-laptop{position:absolute;left:50%;bottom:19%;width:clamp(220px,27vw,390px);max-width:none;margin:0;transform:translateX(-50%);transition:width .5s,bottom .5s}.room-dialog .laptop-lid{border-width:6px;box-shadow:0 10px 60px #000a,0 0 45px #2f80ff22}.room-dialog .laptop-screen{height:175px;padding:12px}.room-dialog:not(.unused) .results-room:not(.screen-enlarged) .laptop-screen{pointer-events:none;overflow:hidden}.room-dialog .results-room:not(.screen-enlarged) .screen-welcome h3{font-size:21px}.room-dialog .results-room:not(.screen-enlarged) .screen-welcome p{font-size:10px}.room-dialog .results-room:not(.screen-enlarged) .screen-shortcuts{display:none}.room-dialog .laptop-bottom{font-size:7px}.room-dialog .laptop-appbar{font-size:7px}.laptop-open{position:absolute;inset:0;z-index:10;background:transparent;border:0;border-radius:16px;cursor:pointer;color:#fff}.laptop-open span{position:absolute;left:50%;bottom:-48px;transform:translateX(-50%);white-space:nowrap;font:11px var(--font-data);background:#123566;border:1px solid #619bea;border-radius:24px;padding:9px 14px;box-shadow:0 6px 25px #0006}.laptop-open:hover{box-shadow:0 0 0 2px #73aeff,0 0 50px #2f80ff55}.laptop-open:focus-visible{outline:3px solid #91bdff;outline-offset:5px}
+.room-dialog .room-desk{display:block;bottom:9%;left:9%;right:9%;height:23%;background:repeating-linear-gradient(2deg,transparent 0 17px,#b4cbec09 18px 19px),linear-gradient(120deg,#21334d,#4e6480 48%,#1c2c43);border-bottom:15px solid #122036;transform:perspective(800px) rotateX(35deg);border-radius:10px;box-shadow:0 35px 50px #0008}.room-dialog .room-desk:before,.room-dialog .room-desk:after{content:'';position:absolute;top:100%;height:180px;width:18px;background:linear-gradient(90deg,#0c1625,#293a52);left:4%}.room-dialog .room-desk:after{left:auto;right:4%}.room-dialog .room-lamp{display:block;left:23%;bottom:29%;height:170px;cursor:default}.room-dialog .room-plant{display:block;right:24%;bottom:30%}.room-dialog .room-cup{display:block;left:32%;bottom:17%}.room-dialog .room-notebook{display:block;right:22%;bottom:16%;transform:rotate(15deg) skewY(-10deg) scale(.8)}.room-dialog .room-help{flex:none;padding:16px;color:#9bb5da;font-size:12px;background:linear-gradient(transparent,#050e24)}.room-help>span{margin-left:12px;color:#597da9}
+.wall-switch{position:absolute;z-index:6;left:12%;top:35%;border:2px solid #4e6584;border-radius:5px;background:linear-gradient(135deg,#5c7493,#273e5f);width:36px;height:52px;cursor:pointer;box-shadow:4px 4px 10px #0005}.wall-switch i{display:block;background:linear-gradient(#b5c8e1,#577295);width:16px;height:25px;margin:auto;border-radius:3px;box-shadow:0 3px 3px #0008}.wall-switch span{position:absolute;left:50%;top:60px;transform:translateX(-50%);font:8px var(--font-data);letter-spacing:2px;color:#819fc8}.lights-on .wall-switch i{background:#9bc6ff;box-shadow:0 -2px 3px #0008}.room-dialog .results-room.lights-on{background:radial-gradient(ellipse at 23% 35%,#83b8ff55,transparent 65%),linear-gradient(90deg,#1b3153,#2b466d 45%,#152a4b)}.room-dialog .lights-on .room-lamp>b{box-shadow:0 70px 110px 60px #78b1ff44}.room-dialog .lights-on .room-desk{filter:brightness(1.25)}
+.room-dialog .screen-enlarged .results-laptop{width:min(960px,88vw);bottom:8%;z-index:12}.room-dialog .screen-enlarged .laptop-screen{height:clamp(180px,54dvh,650px);padding:24px}.room-dialog .screen-enlarged .laptop-open{display:none}.room-dialog .screen-enlarged .laptop-bottom{font-size:10px}.room-dialog .screen-enlarged .laptop-appbar{font-size:10px}.room-dialog .screen-enlarged .room-workspace{padding:0}.room-dialog .screen-enlarged .room-curtains{filter:brightness(.6)}
+@media(min-width:950px){.room-dialog .screen-enlarged .sheet{grid-template-columns:1fr 1.2fr}.room-dialog .screen-enlarged .sheet .meta{border-bottom:0;border-right:1px solid var(--border)}}
+@media(max-width:650px){.room-entry{padding:26px;min-height:370px;align-items:flex-end}.entry-copy{width:100%;gap:8px}.entry-copy .eyebrow{font-size:10px}.entry-copy>span:not(.eyebrow){font-size:12px}.entry-window{left:15%;top:20px;width:70%;height:145px}.entry-laptop{top:100px;left:calc(50% - 45px);scale:.7}.room-dialog .room-toolbar{padding:12px;gap:10px;flex-wrap:wrap}.room-dialog .room-toolbar>div{flex-wrap:wrap;gap:5px}.room-dialog .room-toolbar button{font-size:10px;padding:8px 10px}.room-dialog .room-window{left:16%;width:68%;top:18%;height:45%;border-width:7px}.room-curtains{left:11%;width:78%;top:16%;height:55%}.room-dialog .room-art{display:none}.wall-switch{left:4%;top:40%;scale:.8}.room-dialog .room-lamp{left:13%;bottom:28%;scale:.65;transform-origin:bottom}.room-dialog .room-plant{right:12%;bottom:28%;scale:.65;transform-origin:bottom}.room-dialog .room-cup{left:18%;bottom:17%;scale:.65}.room-dialog .room-notebook{right:9%;bottom:16%;scale:.65}.room-dialog .room-desk{left:3%;right:3%;height:22%}.room-dialog .results-laptop{width:220px;bottom:20%}.room-dialog .laptop-screen{height:145px}.room-dialog .screen-enlarged .results-laptop{width:94vw;bottom:11%}.room-dialog .screen-enlarged .laptop-screen{height:52dvh;padding:12px}.room-dialog .screen-enlarged .laptop-appbar{font-size:7px}.room-dialog .screen-enlarged .laptop-bottom{font-size:8px}.room-dialog .room-help{font-size:10px;padding:12px}.room-help>span{display:none}}
+@media(max-height:600px){.room-dialog .results-laptop{bottom:16%;width:250px}.room-dialog .laptop-screen{height:110px}.room-dialog .screen-enlarged .results-laptop{bottom:8%;width:min(760px,85vw)}.room-dialog .screen-enlarged .laptop-screen{height:48dvh}.room-dialog .room-lamp,.room-dialog .room-plant{scale:.6;transform-origin:bottom}.room-dialog .room-help{padding:8px}}
+@media(prefers-reduced-motion:reduce){.room-curtains i,.room-dialog .results-laptop{transition:none}}
+/* Quiet room: interact with the objects themselves. */
+.room-dialog .room-toolbar{justify-content:flex-end;background:transparent;position:absolute;top:0;left:0;right:0;pointer-events:none}.room-toolbar .room-close{pointer-events:auto}.room-dialog .room-toolbar>span,.room-curtain-toggle,.room-light,.room-expand,.room-help,.room-art,.wall-switch span,.laptop-open span{display:none!important}
+.room-dialog .room-art{display:none}.room-dialog .room-workspace{pointer-events:none;z-index:2;flex:none;height:100%;width:100%}.room-workspace .results-laptop,.room-workspace .room-lamp,.room-workspace .room-cup,.room-workspace .room-notebook{pointer-events:auto}.room-workspace .room-plant,.room-workspace .room-desk{pointer-events:none}
+.room-dialog .results-room:not(.screen-enlarged) .laptop-appbar,.room-dialog .results-room:not(.screen-enlarged) .laptop-bottom{visibility:hidden}.room-dialog .results-room:not(.screen-enlarged) .screen-welcome{visibility:hidden}.room-dialog .results-room:not(.screen-enlarged) .laptop-screen{background:radial-gradient(ellipse at 50% 75%,#3988eb77,transparent 60%),linear-gradient(145deg,#091934,#183c6a)}
+.room-curtains{z-index:1}.room-curtains button{position:absolute;top:0;bottom:0;width:15%;padding:0;border:0;cursor:grab;background:repeating-linear-gradient(90deg,#162e51 0,#46658e 10%,#253e62 22%,#101e38 35%);box-shadow:5px 15px 20px #0005;transition:width 1s ease;clip-path:polygon(0 0,100% 0,96% 100%,5% 99%);pointer-events:auto}.room-curtains button:first-child{left:0;border-radius:0 0 16px 8px}.room-curtains button:last-child{right:0;border-radius:0 0 8px 16px}.room-curtains button.is-closed{width:50.5%}.room-curtains button:hover{filter:brightness(1.15)}
+.lamp-cord{position:absolute;top:27px;left:57px;width:28px;height:100px;border:0;padding:0;background:transparent;cursor:pointer;transform-origin:top;transition:transform .15s}.lamp-cord:before{content:'';position:absolute;top:0;left:13px;width:2px;height:82px;background:linear-gradient(90deg,#526584,#b4c7df);box-shadow:1px 0 3px #0006}.lamp-cord span{position:absolute;left:9px;bottom:6px;width:10px;height:16px;border-radius:6px;background:linear-gradient(90deg,#8ba8c7,#dce9fb,#6280a4);box-shadow:0 3px 5px #0005}.lamp-cord:active{transform:translateY(8px)}.lamp-cord:hover span{box-shadow:0 0 12px #a4cdff}
+.laptop-shut{display:none;position:absolute;z-index:15;right:10px;top:7px;width:30px;height:30px;background:#1a3152;border:1px solid #56789e;border-radius:50%;color:#d6e8ff;cursor:pointer}.screen-enlarged .laptop-shut{display:block}.room-dialog .screen-enlarged .laptop-appbar{padding-right:44px}
+.room-dialog .room-cup{padding:0;border:0;border-top:0;cursor:pointer;overflow:visible;background:linear-gradient(90deg,#9eb5ce99,#d6e8ffdd 45%,#647e9dcc);box-shadow:inset 0 -3px 5px #fff5,4px 8px 15px #0006}.coffee-surface{position:absolute;left:3px;right:3px;top:2px;height:12px;border-radius:50%;background:radial-gradient(ellipse,#b5865f 0 12%,#66452c 32%,#34251e 75%);border:2px solid #c0d5eb;box-shadow:inset 0 0 3px #120b08}.room-cup:before{content:'';position:absolute;left:5px;right:5px;top:8px;bottom:5px;border-radius:0 0 15px 15px;background:linear-gradient(90deg,#6a4732cc,#412b1fb3);z-index:-1}.coffee-steam{position:absolute;left:3px;right:3px;height:70px;bottom:92%;pointer-events:none}.coffee-steam i{position:absolute;left:10%;bottom:0;width:12px;height:45px;border-left:3px solid #d8eaff88;border-radius:50%;filter:blur(2px);animation:coffee-rise 3s ease-out infinite;opacity:0}.coffee-steam i:nth-child(2){left:45%;animation-delay:1s;height:54px}.coffee-steam i:nth-child(3){left:75%;animation-delay:2s}.room-cup.is-refilling .coffee-surface{animation:coffee-fill .8s ease-out}.room-cup.is-refilling{filter:brightness(1.2)}
+.room-dialog .room-notebook{cursor:pointer;border-top:0;border-right:0;border-bottom:0}.room-notebook:hover{filter:brightness(1.25)}
+.notebook-reader{position:absolute;inset:0;z-index:20;display:grid;place-content:center;background:#030a19c9;backdrop-filter:blur(7px);padding:45px 20px}.notebook-reader[hidden]{display:none}.notebook-close{position:absolute;right:25px;top:25px;width:40px;height:40px;border:1px solid #6b83a1;border-radius:50%;color:#dceaff;background:#142640;cursor:pointer}.notebook-spread{width:min(500px,80vw);perspective:1200px;touch-action:pan-y}.notebook-paper{position:relative;min-height:390px;padding:44px 36px 50px 52px;background:repeating-linear-gradient(transparent 0 30px,#7399be44 30px 31px),linear-gradient(100deg,#d6d7cd,#f5f0dc 7%,#e9e4d1);background-position:0 13px,0 0;color:#203552;box-shadow:-12px 0 0 #1b3250,-16px 5px 0 #0c1b30,5px 5px 0 #b6b9ad,9px 9px 0 #d9dacd,0 25px 60px #0008;border-radius:2px 12px 12px 2px;transform-origin:left;overflow:hidden}.notebook-paper:before{content:'';position:absolute;left:35px;top:0;bottom:0;width:1px;background:#b86d6a66}.notebook-paper h3,.notebook-paper p,.notebook-date{font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive}.notebook-paper h3{font-size:25px;line-height:1.3;margin:16px 0 20px;color:#19345c}.notebook-paper p{font-size:18px;line-height:31px;white-space:pre-line}.notebook-date{font-size:12px;color:#6b7882}.notebook-page-number{position:absolute;bottom:18px;right:25px;font:12px 'Segoe Print',cursive;color:#63758c}.notebook-navigation{display:flex;justify-content:space-between;align-items:center;margin-top:22px;color:#9ebde3}.notebook-navigation button{width:44px;height:44px;border:1px solid #45658c;border-radius:50%;background:#142a49;color:#c9e1ff;font-size:20px;cursor:pointer}.notebook-navigation button:disabled{opacity:.3;cursor:default}.notebook-dots{font-size:13px;letter-spacing:8px}.notebook-paper.page-turn{animation:paper-turn .4s ease}
+.room-curtains button:focus-visible,.lamp-cord:focus-visible,.room-cup:focus-visible,.room-notebook:focus-visible{outline:3px solid #a9d0ff;outline-offset:5px}
+@keyframes coffee-rise{0%{opacity:0;transform:translate(0,10px) scale(.7)}20%{opacity:.6}100%{opacity:0;transform:translate(6px,-35px) scale(1.3)}}@keyframes coffee-fill{from{transform:translateY(25px) scale(.7);opacity:.3}to{transform:none;opacity:1}}@keyframes paper-turn{from{transform:rotateY(-35deg);opacity:.4}to{transform:rotateY(0);opacity:1}}
+@media(max-width:650px){.notebook-paper{padding:30px 22px 45px 43px;min-height:350px}.notebook-paper h3{font-size:22px}.notebook-paper p{font-size:16px}.notebook-spread{width:82vw}.room-dialog .room-toolbar{justify-content:flex-end}.room-dialog .room-lamp{pointer-events:auto}}
+@media(prefers-reduced-motion:reduce){.coffee-steam i{animation:none;opacity:.3}.room-curtains button,.lamp-cord{transition:none}.notebook-paper.page-turn,.room-cup.is-refilling .coffee-surface{animation:none}}
+/* Gaming workbench and a separately controlled task-lamp bulb. */
+.results-room{--gaming-rgb:#51a7ff}
+.room-dialog .room-lamp>b,.room-dialog .lights-on .room-lamp>b{box-shadow:inset 0 -3px 5px #0005}
+.lamp-bulb{position:absolute;left:36px;top:29px;width:20px;height:13px;border-radius:30% 30% 60% 60%;background:#6c7783;transform:rotate(-15deg);transition:background .2s,box-shadow .2s;z-index:1;pointer-events:none}
+.lamp-on .lamp-bulb{background:#fff4cf;box-shadow:0 0 7px 3px #ffedc199,0 4px 17px 7px #ffd89755}.room-dialog .lamp-on .room-lamp>b{box-shadow:inset 0 -3px 6px #ffeacb66}
+.room-dialog .results-laptop{bottom:25%;width:clamp(250px,31vw,440px)}
+.room-dialog .laptop-lid{border-color:#1b2537;border-radius:15px 15px 5px 5px;box-shadow:0 0 0 1px #53647c,0 0 26px #2f80ff25,0 12px 35px #0008}.room-dialog .laptop-lid:after{content:'';position:absolute;bottom:-5px;left:43%;right:43%;height:2px;background:var(--gaming-rgb);box-shadow:0 0 6px var(--gaming-rgb)}
+.room-dialog .laptop-keyboard{height:106px;background:linear-gradient(130deg,#253348,#0c1525 50%,#26374e);margin:0 -7%;clip-path:polygon(6.2% 0,93.8% 0,100% 100%,0 100%);transform:perspective(650px) rotateX(22deg);border-bottom:2px solid var(--gaming-rgb);box-shadow:inset 0 2px #5c728d}
+.room-dialog .laptop-keyboard>.gaming-keys{position:absolute;left:10%;right:10%;top:8px;height:65px;background:none;display:flex;flex-direction:column;gap:3px;transform:none;border-radius:0;padding:0}
+.gaming-key-row{display:flex;gap:3px;flex:1;min-height:0}.gaming-key{display:flex;align-items:center;justify-content:center;flex:1;min-width:0;line-height:1;border-radius:2px;background:linear-gradient(#182338,#09101c);border:1px solid color-mix(in srgb,var(--gaming-rgb) 65%,#26314b);box-shadow:0 0 3px color-mix(in srgb,var(--gaming-rgb) 35%,transparent),inset 0 1px #ffffff14;color:#bbd8f8;font:5px/1 var(--font-data)}.gaming-key:nth-child(3n){border-color:#8a75d8;color:#c3b8ff}.gaming-key:nth-child(5n){border-color:#4eabbe;color:#99e5e3}.gaming-key.key-wide{flex:1.5}.gaming-key.key-space{flex:5;color:transparent}
+.room-dialog .laptop-keyboard>span{bottom:8px;height:19px;left:37%;width:26%;border:1px solid #475f7c;background:linear-gradient(145deg,#1e2d43,#132034);box-shadow:inset 0 1px #8091a222}.room-dialog .laptop-edge{margin:-5px -7% 0;height:8px;background:linear-gradient(#33465e,#101c2e);border-bottom:2px solid var(--gaming-rgb);box-shadow:0 3px 12px color-mix(in srgb,var(--gaming-rgb) 35%,transparent),0 12px 18px #0009}
+.laptop-stand{position:absolute;top:100%;left:17%;right:17%;height:58px;z-index:-1;pointer-events:none}.laptop-stand i{position:absolute;left:36%;right:36%;top:0;height:45px;background:linear-gradient(90deg,#132035,#617590 50%,#1a2c43);transform:skewX(-18deg);clip-path:polygon(0 0,100% 0,80% 100%,0 100%)}.laptop-stand b{position:absolute;left:0;right:0;bottom:0;height:17px;border-radius:50% 50% 6px 6px;background:linear-gradient(#53667e,#15263c);transform:perspective(200px) rotateX(25deg);box-shadow:0 6px 12px #0008,inset 0 1px #93a9c255}.laptop-stand b:after{content:'';position:absolute;left:30%;right:30%;bottom:0;height:2px;background:var(--gaming-rgb);box-shadow:0 0 6px var(--gaming-rgb)}
+.room-dialog .room-desk{background:repeating-linear-gradient(115deg,#7a94b407 0 2px,transparent 2px 5px),linear-gradient(120deg,#111e31,#263950 48%,#0b1628);border-bottom:14px solid #071120;box-shadow:0 4px 0 var(--gaming-rgb),0 9px 22px color-mix(in srgb,var(--gaming-rgb) 30%,transparent),0 35px 50px #0008}.gaming-mat{position:absolute;z-index:1;left:26%;right:20%;bottom:14%;height:15%;background:linear-gradient(135deg,#0b1424,#142c47);border:1px solid color-mix(in srgb,var(--gaming-rgb) 70%,#1d3551);border-radius:15px;transform:perspective(600px) rotateX(32deg);box-shadow:0 0 10px color-mix(in srgb,var(--gaming-rgb) 20%,transparent);pointer-events:none}
+.gaming-mouse{position:absolute;z-index:5;right:29%;bottom:19%;width:39px;height:59px;pointer-events:auto;border:1px solid #425b7d;border-radius:48% 48% 42% 42%;background:linear-gradient(110deg,#3a4d66,#142136 65%,#091527);transform:rotate(15deg);cursor:pointer;box-shadow:0 6px 8px #0008,inset 2px 0 #7892b344,0 2px 7px color-mix(in srgb,var(--gaming-rgb) 35%,transparent)}.gaming-mouse:before{content:'';position:absolute;top:-38px;left:47%;width:2px;height:38px;background:#122138;transform:rotate(-15deg);z-index:-1}.gaming-mouse:after{content:'';position:absolute;top:8px;bottom:18px;left:49%;width:1px;background:#061020}.gaming-mouse i{position:absolute;top:7px;left:42%;width:6px;height:12px;border-radius:4px;background:var(--gaming-rgb);box-shadow:0 0 6px var(--gaming-rgb);z-index:1}.gaming-mouse span{position:absolute;left:30%;right:30%;bottom:8px;height:9px;border-bottom:2px solid var(--gaming-rgb);transform:rotate(-25deg)}.gaming-mouse:focus-visible{outline:2px solid #b6d7ff;outline-offset:5px}
+.gaming-headset{position:absolute;left:15%;bottom:19%;width:75px;height:65px;border:9px solid #263a52;border-bottom:0;border-radius:50% 50% 30% 30%;transform:rotate(-20deg) perspective(300px) rotateX(20deg);z-index:3;box-shadow:inset 0 3px #7187a2,0 -2px var(--gaming-rgb);pointer-events:none}.gaming-headset i,.gaming-headset b{position:absolute;width:20px;height:35px;border-radius:8px;background:linear-gradient(90deg,#0a1423,#34506f);border:2px solid #17263d;bottom:-5px;left:-12px;box-shadow:inset 2px 0 var(--gaming-rgb),3px 5px 5px #0006}.gaming-headset b{left:auto;right:-12px}
+.room-dialog .screen-enlarged .laptop-keyboard{height:106px}.screen-enlarged .gaming-key{font-size:8px}.screen-enlarged .gaming-mouse,.screen-enlarged .gaming-headset{opacity:0;pointer-events:none}.room-dialog .screen-enlarged .laptop-screen{height:clamp(140px,48dvh,600px)}.screen-enlarged .laptop-stand{display:none}
+@media(max-width:650px){.room-dialog .results-laptop{width:245px;bottom:25%}.room-dialog .laptop-keyboard{height:90px}.room-dialog .laptop-keyboard>.gaming-keys{height:52px;left:9%;right:9%;gap:2px}.gaming-key-row{gap:2px}.gaming-key{font-size:4px}.room-dialog .laptop-keyboard>span{height:16px}.gaming-mat{left:13%;right:8%;bottom:15%;height:15%}.gaming-mouse{right:14%;bottom:19%;scale:.7;transform-origin:bottom}.gaming-headset{left:8%;bottom:20%;scale:.6;transform-origin:bottom}.room-dialog .room-cup{left:24%;bottom:17%}.room-dialog .screen-enlarged .laptop-keyboard{height:90px}.screen-enlarged .gaming-key{font-size:5px}.laptop-stand{height:45px}.laptop-stand i{height:34px}}
+@media(max-height:600px){.room-dialog .results-laptop{bottom:25%;width:260px}.room-dialog .laptop-keyboard{height:78px}.room-dialog .laptop-keyboard>.gaming-keys{height:45px}.room-dialog .laptop-keyboard>span{height:14px}.room-dialog .screen-enlarged .laptop-keyboard{height:78px}.room-dialog .screen-enlarged .laptop-screen{height:38dvh}.laptop-stand{height:36px}.laptop-stand i{height:28px}}
+.certificate-board{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(25px,6vw,80px);padding:95px clamp(22px,5vw,65px) 35px;background:radial-gradient(ellipse at 20% 40%,#2e568033,transparent 60%),repeating-linear-gradient(0deg,#8baed006 0 1px,transparent 1px 5px),linear-gradient(145deg,#162a43,#0b1b31);border:12px solid #213954;border-radius:12px;box-shadow:inset 0 0 0 2px #6384a244,inset 0 0 65px #0005,0 22px 50px #0004;isolation:isolate}
+.board-rail{position:absolute;top:27px;left:5%;right:5%;height:7px;border-radius:8px;background:linear-gradient(#7992ab,#2c435e);box-shadow:0 4px 8px #0007}.board-rail:before,.board-rail:after{content:'';position:absolute;top:1px;width:5px;height:5px;border-radius:50%;background:#132840;box-shadow:inset 1px 1px #9fb4ca;left:12px}.board-rail:after{left:auto;right:12px}
+.hanging-certificate{position:relative;margin:0;min-width:0;transform-origin:50% -61px;transition:transform .45s}.certificate-one{transform:rotate(-2deg)}.certificate-two{transform:rotate(2deg)}.hanging-certificate:hover{transform:rotate(0) translateY(-3px)}
+.certificate-cord{position:absolute;top:-62px;left:18%;right:18%;height:77px;z-index:-1;background:linear-gradient(147deg,transparent calc(50% - 1px),#9faec0 50%,transparent calc(50% + 1px)) left/50% 100% no-repeat,linear-gradient(33deg,transparent calc(50% - 1px),#9faec0 50%,transparent calc(50% + 1px)) right/50% 100% no-repeat}.certificate-cord:before{content:'';position:absolute;left:calc(50% - 5px);top:-4px;width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b5c8dc,#3b5470);box-shadow:1px 3px 4px #0008}
+.certificate-frame{padding:11px;border:1px solid #7691ae;background:linear-gradient(130deg,#66809e,#223851 12%,#425d7c 50%,#172a42 90%,#8aa0b9);box-shadow:8px 14px 18px #0007,inset 0 0 0 2px #12253d,0 0 0 2px #0b192b}
+.certificate-paper{position:relative;min-height:310px;aspect-ratio:1.3;background:repeating-linear-gradient(45deg,#90a4ae05 0 1px,transparent 1px 4px),linear-gradient(130deg,#f9f5e9,#e3e6e0);color:#193351;padding:clamp(20px,3vw,34px);border:5px double #8b9baa;box-shadow:inset 0 0 30px #c5c3b955;display:flex;flex-direction:column;justify-content:center;overflow:hidden}.certificate-paper:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(130deg,transparent 40%,#fff5 49%,transparent 65%)}
+.certificate-institution{font:700 25px var(--font-display);letter-spacing:2px;color:#1b3b61}.certificate-institution span{font:500 9px var(--font-data);letter-spacing:2px;display:block;margin-top:2px}.certificate-rule{width:40px;height:2px;background:#8d9aab;margin:15px 0}.certificate-category{text-transform:uppercase;letter-spacing:2px;font:8px var(--font-data);color:#64788c;margin-bottom:12px}.certificate-paper h3{font-family:Georgia,'Times New Roman',serif;font-size:clamp(25px,3vw,37px);font-weight:400;line-height:1.12;letter-spacing:-1px}.certificate-name{font:italic 15px Georgia,serif;margin-top:22px;color:#3c536c}.certificate-footer{display:flex;justify-content:space-between;gap:8px;margin-top:25px;padding-top:12px;border-top:1px solid #a8b5c1;color:#58718a;font:9px var(--font-data)}.certificate-footer b{font-weight:500}.hanging-certificate figcaption{text-align:center;color:#9bb1ca;font-size:11px;margin:20px -10px 0}
+.education-record{display:flex;justify-content:center;align-items:center;gap:28px;padding:25px 15px;color:#a6bbd7;font-size:13px}.education-record small{display:block;color:#6783a8;font-size:11px;margin-top:3px}.education-record>i{height:28px;width:1px;background:var(--border-strong)}
+@media(max-width:650px){.certificate-board{grid-template-columns:1fr;gap:95px;padding:90px 25px 30px;border-width:8px}.certificate-paper{min-height:285px}.certificate-paper h3{font-size:32px}.certificate-two .certificate-cord:before{box-shadow:1px 3px 4px #0008}.education-record{gap:15px;font-size:11px}.education-record small{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.hanging-certificate{transition:none}}
+/* Illustrated career timeline */
+.career-head-note{display:grid;gap:12px;justify-items:start}.career-motion{background:none;color:#86b5ed;border:0;border-bottom:1px solid var(--border-strong);font:11px var(--font-data);padding:5px 0;cursor:pointer}
+.career-timeline{position:relative;gap:30px;padding-left:30px}.career-timeline:before{content:'';position:absolute;left:5px;top:35px;bottom:35px;width:1px;background:linear-gradient(#63a8ff,#4169a7 60%,#183359)}
+#career .career-card{position:relative;display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.3fr);gap:0;padding:0;border:1px solid #254064;border-radius:23px;background:linear-gradient(125deg,#0e2243,#08162e);overflow:visible;isolation:isolate;transition:opacity .7s,transform .7s,border-color .3s,box-shadow .3s}
+.career-card:before{content:'';position:absolute;left:-31px;top:37px;width:11px;height:11px;border-radius:50%;background:#3c6caa;border:3px solid var(--bg);box-shadow:0 0 0 1px #456a9a;transition:.4s}.career-card.is-in-view:before{background:#8ac7ff;box-shadow:0 0 0 2px #3272c0,0 0 19px #338bff99}.career-card:hover{border-color:#4a79b6;box-shadow:0 15px 50px #0003}
+.career-art{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center;padding:25px 20px 35px;background:radial-gradient(ellipse at 50% 60%,#3575b82e,transparent 70%),linear-gradient(145deg,#18325a77,#0a1b37);border-radius:22px 0 0 22px;border-right:1px solid #29436b66;overflow:hidden}
+.career-art:before{content:'';position:absolute;inset:0;background-image:radial-gradient(#8fb4e633 1px,transparent 1px);background-size:22px 22px;mask-image:radial-gradient(ellipse,#0009,transparent 70%)}.career-art:after{content:'';position:absolute;top:15%;left:15%;width:70%;height:70%;border:1px solid #6596d51c;border-radius:50%;box-shadow:0 0 0 22px #6398e008;animation:career-halo 5s ease-in-out infinite alternate;animation-play-state:paused}
+.career-art svg{position:relative;z-index:1;width:100%;max-width:350px;height:auto;overflow:visible;filter:drop-shadow(0 12px 10px #0003)}.career-chapter{position:absolute;top:23px;left:24px;font:9px var(--font-data);letter-spacing:2px;color:#668cb9;z-index:2}.career-art-label{position:absolute;bottom:19px;left:24px;font:10px var(--font-data);letter-spacing:.04em;color:#93b8e3}
+.career-copy{padding:32px;min-width:0}#career .career-copy .when{font-size:11px;padding:0;margin-bottom:18px;color:#86b9ff;display:inline-flex;align-items:center;gap:8px}#career .career-card:first-child .when:before{content:'';width:6px;height:6px;border-radius:50%;background:#83e7c5;box-shadow:0 0 10px #83e7c577;animation:career-pulse 2s infinite;animation-play-state:paused}#career .career-copy h3{font-size:clamp(22px,2.5vw,29px);line-height:1.15;margin-bottom:8px}#career .career-copy .org{font-size:14px;color:#7fa5d3;margin-bottom:18px}
+.career-responsibilities summary{display:flex;align-items:center;justify-content:space-between;gap:15px;list-style:none;cursor:pointer;font-size:12px;font-weight:600;color:#adcaee;padding:12px 0;border-top:1px solid #29436b88}.career-responsibilities summary::-webkit-details-marker{display:none}.career-responsibilities summary>span{font:20px var(--font-data);transition:transform .25s}.career-responsibilities[open] summary>span{transform:rotate(45deg)}#career .career-copy ul{font-size:13px;gap:10px;line-height:1.65;color:#a7bddb;padding:10px 0 0 17px}.career-responsibilities[open] ul{animation:career-details .35s ease both}.career-motion:focus-visible,.career-responsibilities summary:focus-visible{outline:2px solid #78b8ff;outline-offset:4px}
+.career-float{animation:career-float 4s ease-in-out infinite;animation-play-state:paused}.career-bars{transform-origin:180px 180px;animation:career-bars 3s ease-in-out infinite alternate;animation-play-state:paused}.career-line{stroke-dasharray:280;stroke-dashoffset:280;animation:career-draw 4s ease-in-out infinite;animation-play-state:paused}.career-flow{animation:career-flow 2s linear infinite;animation-play-state:paused}
+.career-card.is-in-view .career-float,.career-card.is-in-view .career-bars,.career-card.is-in-view .career-line,.career-card.is-in-view .career-flow,.career-card.is-in-view .career-art:after,#career .career-card.is-in-view:first-child .when:before{animation-play-state:running}.career-paused .career-card *,.career-paused .career-card :before,.career-paused .career-card :after{animation-play-state:paused!important}
+@keyframes career-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes career-bars{from{transform:scaleY(.7);opacity:.7}to{transform:scaleY(1);opacity:1}}@keyframes career-draw{0%{stroke-dashoffset:280;opacity:.3}50%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:.3}}@keyframes career-flow{to{stroke-dashoffset:-44}}@keyframes career-halo{from{transform:scale(.92);opacity:.5}to{transform:scale(1.08);opacity:1}}@keyframes career-pulse{50%{opacity:.4}}@keyframes career-details{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:750px){#career .career-card{grid-template-columns:1fr}.career-art{min-height:240px;max-height:270px;border-radius:22px 22px 0 0;border-right:0;border-bottom:1px solid #29436b66}.career-art svg{max-width:280px}.career-copy{padding:25px}.career-timeline{padding-left:24px;gap:25px}.career-timeline:before{left:3px}.career-card:before{left:-27px}.career-chapter{top:18px}.career-art-label{bottom:15px}}
+@media(prefers-reduced-motion:reduce){#career * ,#career :before,#career :after{animation:none!important;transition:none!important}.career-line{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+<nav class="navbar">
+    <div class="logo">Anas AV</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#toolkit">Toolkit</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/919645376915" target="_blank" class="btn btn-primary nav-cta">Hire Me</a>
+</nav>
+</header>
+
+<!-- ================= COVER HERO ================= -->
+<section id="home">
+<div class="hero">
+
+    <div>
+        <span class="cover-tag">PERFORMANCE MARKETER</span>
+        <h1 class="cover-name">Anas AV</h1>
+        <div class="cover-skills">Meta Ads <i>|</i> Google Ads <i>|</i> Performance Marketing</div>
+        <p class="lede">I help businesses get more leads, traffic and sales through data-driven digital marketing strategies, and track every lead back to its campaign.</p>
+
+        <div class="hero-buttons">
+            <a href="MUHAMMED%20ANAS%20AV%20%20digital%20marketing%20.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><span class="btn-icon">⬇</span>Download CV</a>
+            <a href="#contact" class="btn"><span class="btn-icon">💬</span>Let's Connect</a>
+        </div>
+        <p class="hero-loc">📍 Malappuram, Kerala</p>
+    </div>
+
+    <div class="cover-photo">
+        👤
+        <img src="anas.jpeg" alt="Muhammed Anas A.V" onerror="this.remove()">
+        <div class="cover-caption">Muhammed Anas A.V<span>Digital Marketing Strategist</span></div>
+    </div>
+
+</div>
+</section>
+
+<!-- ================= HEADLINE RESULTS ================= -->
+<div class="container">
+    <div class="ledger rv" role="list" aria-label="Headline results">
+        <div role="listitem"><span class="num">27</span><span class="what">raw leads from one Performance Max campaign on a ₹3,000 budget</span></div>
+        <div role="listitem"><span class="num">₹181.60</span><span class="what">cost per lead on a Meta lead campaign, 14 leads at ₹300 a day</span></div>
+        <div role="listitem"><span class="num">14.70<small>%</small></span><span class="what">click-through rate on that Performance Max campaign</span></div>
+        <div role="listitem"><span class="num">4.16<small>k</small></span><span class="what">impressions on a two-week Google Search campaign for Al Salam</span></div>
+    </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+<div class="container">
+    <div class="sec-head rv">
+        <div><div class="eyebrow">Services</div><h2>What I do</h2></div>
+        <p>Digital marketing services for businesses that want measurable results.</p>
+    </div>
+<div class="services-carousel" role="region" aria-label="Digital marketing services">    <div class="services-track" tabindex="0" aria-label="Services carousel">
+        <div class="card service-card"><div class="service-logo"><img src="assets/logos/meta.svg" alt="Meta logo" width="48" height="48"></div><h3>Meta Ads</h3><p>Facebook and Instagram advertising for leads and business growth.</p></div>
+        <div class="card service-card"><div class="service-logo"><img src="assets/logos/googleads.svg" alt="Google Ads logo" width="48" height="48"></div><h3>Google Ads</h3><p>Search and Performance Max campaigns focused on high-intent traffic and conversions.</p></div>
+        <div class="card service-card"><div class="service-logo"><img src="assets/logos/google.svg" alt="Google logo" width="48" height="48"></div><h3>SEO</h3><p>Keyword research, on-page optimization and better organic visibility.</p></div>
+        <div class="card service-card"><div class="service-logo"><img src="assets/logos/instagram.svg" alt="Instagram logo" width="48" height="48"></div><h3>Social Media Marketing</h3><p>Strategy, content calendars and platform planning for business growth.</p></div>
+        <div class="card service-card"><div class="service-logo"><img src="assets/logos/googleanalytics.svg" alt="Google Analytics logo" width="48" height="48"></div><h3>Tracking and Analytics</h3><p>Meta Pixel and Google Analytics set up so every lead is attributed correctly.</p></div>
+        <div class="card service-card"><div class="service-logo"><img src="assets/logos/wordpress.svg" alt="WordPress logo" width="48" height="48"></div><h3>Creative and Web</h3><p>Ad creatives, copywriting and WordPress websites that support campaigns.</p></div>
+    </div><div class="services-controls"><span class="services-count">01 / 06</span><div><button type="button" data-service="prev" aria-label="Previous service">&#8592;</button> <button type="button" data-service="pause">Pause</button> <button type="button" data-service="next" aria-label="Next service">&#8594;</button></div></div></div>
+</div>
+</section>
+
+<!-- ================= CAMPAIGN RESULTS ================= -->
+<section id="results">
+<div class="container">
+    <div class="sec-head rv">
+        <div><div class="eyebrow">Case studies</div><h2>Campaign results</h2></div>
+        <p>Figures are taken straight from the Google Ads and Meta Ads Manager dashboards. Budgets are in rupees.</p>
+    </div>
+
+    <button type="button" class="room-entry" aria-haspopup="dialog" aria-controls="campaign-room"><span class="entry-window" aria-hidden="true"><i></i></span><span class="entry-laptop" aria-hidden="true"><i>ANAS / REPORTS</i></span><span class="entry-copy"><span class="eyebrow">Step inside my workspace</span><strong>A room full of results.</strong><span>Open the curtains. Turn on the light. Explore the laptop.</span><b>Enter the room &#8599;</b></span></button>
+    <dialog id="campaign-room" class="room-dialog" aria-label="Interactive campaign results room">
+    <div class="results-room">
+        <div class="room-wall" aria-hidden="true"><div class="room-window"><i></i><i></i></div><div class="room-art"><span>MAKE<br>IT COUNT.</span></div><div class="room-shelf"><span></span><span></span><span></span></div></div>
+        <div class="room-curtains"><button type="button" aria-label="Close left curtain" aria-pressed="false"></button><button type="button" aria-label="Close right curtain" aria-pressed="false"></button></div>
+        <button type="button" class="wall-switch" aria-pressed="false" aria-label="Turn room light on"><i></i><span>LIGHT</span></button>
+        <div class="room-toolbar"><span><i></i> THE RESULTS ROOM</span><div><button type="button" class="room-curtain-toggle" aria-pressed="false">Close curtains</button><button type="button" class="room-light" aria-pressed="false">Lights on</button><button type="button" class="room-expand" aria-expanded="false" aria-controls="results-display">Open laptop &#8599;</button><button type="button" class="room-close" autofocus>Close room &#10005;</button></div></div>
+        <div class="room-workspace">
+            <div class="room-lamp"><i aria-hidden="true"></i><b aria-hidden="true"></b><span class="lamp-bulb" aria-hidden="true"></span><button type="button" class="lamp-cord" aria-label="Pull cord to turn lamp bulb on" aria-pressed="false"><span></span></button></div>
+            <div class="room-plant" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+            <div class="results-laptop">
+                <button type="button" class="laptop-open" aria-label="Open laptop to explore campaign reports"><span>Click to open reports &#8599;</span></button>
+                <button type="button" class="laptop-shut" aria-label="Close laptop view">&#10005;</button>
+                <div class="laptop-lid"><div class="laptop-camera" aria-hidden="true"></div>
+                    <div class="laptop-appbar"><span class="app-dots" aria-hidden="true">&#9679; &#9679; &#9679;</span><span>ANAS / CAMPAIGN REPORTS</span><span class="app-live">Portfolio</span></div>
+                    <div id="results-display" class="laptop-screen" tabindex="0" role="region" aria-label="Campaign reports. Scroll inside this screen to read all four campaigns.">
+                        <div class="screen-welcome"><div class="eyebrow">Performance journal</div><h3>Real campaigns.<br>Measurable impact.</h3><p>Explore four campaigns and the numbers behind them.</p><div class="screen-shortcuts" aria-label="Jump to campaign"><button type="button" data-report="0">DCS / PMax</button><button type="button" data-report="1">Al Salam / Meta</button><button type="button" data-report="2">Al Salam / Search</button><button type="button" data-report="3">DCS / Search</button></div></div>    <div class="sheets">
+
+        <!-- PMax -->
+        <article class="sheet">
+            <div class="meta">
+                <span class="platform"><i></i>Google Ads · Performance Max</span>
+                <h3>Local store visits for DCS</h3>
+                <dl>
+                    <dt>Client</dt><dd>DCS, attestation services</dd>
+                    <dt>Ran</dt><dd>30 Sep – 14 Oct 2026</dd>
+                    <dt>Budget</dt><dd class="mono">₹3,000 total</dd>
+                    <dt>Status</dt><dd><span class="status">Completed</span></dd>
+                </dl>
+                <p class="note">Stats cover 7 Sep – 12 Oct 2026, the window shown in the dashboard.</p>
+            </div>
+            <div class="body">
+                <div class="stats">
+                    <div><span class="k">Clicks</span><span class="v">382</span></div>
+                    <div><span class="k">Impressions</span><span class="v">2.6K</span></div>
+                    <div><span class="k">CTR</span><span class="v hl">14.70%</span></div>
+                    <div><span class="k">Conversions</span><span class="v">2.00</span></div>
+                    <div><span class="k">Raw leads</span><span class="v hl">27</span></div>
+                </div>
+                <div class="funnel" aria-label="Lead funnel">
+                    <span class="label">Lead funnel, drawn to scale</span>
+                    <div class="row"><span>Interactions</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="val">382</span></div>
+                    <div class="row"><span>Raw leads</span><span class="track"><span class="fill" style="width:7.07%"></span></span><span class="val">27</span></div>
+                    <div class="row"><span>Qualified</span><span class="track"></span><span class="val na">n/a</span></div>
+                    <div class="row"><span>Converted</span><span class="track"></span><span class="val na">n/a</span></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Meta -->
+        <article class="sheet">
+            <div class="meta">
+                <span class="platform"><i></i>Meta Ads · Lead generation</span>
+                <h3>Lead campaign for Al Salam</h3>
+                <dl>
+                    <dt>Client</dt><dd>Al Salam</dd>
+                    <dt>Ran</dt><dd>2 weeks</dd>
+                    <dt>Budget</dt><dd class="mono">₹300 per day</dd>
+                    <dt>Attribution</dt><dd>7-day click or 1-day view</dd>
+                </dl>
+            </div>
+            <div class="body">
+                <div class="stats">
+                    <div><span class="k">Leads</span><span class="v hl">14</span></div>
+                    <div><span class="k">Cost per lead</span><span class="v hl">₹181.60</span></div>
+                    <div><span class="k">Amount spent</span><span class="v">₹2,542.37</span></div>
+                    <div><span class="k">CPC</span><span class="v">₹5.97</span></div>
+                    <div><span class="k">Reach</span><span class="v">29,000</span></div>
+                    <div><span class="k">Impressions</span><span class="v">40,789</span></div>
+                    <div><span class="k">Frequency</span><span class="v">1.41</span></div>
+                </div>
+                <p class="note">Each person saw the ad 1.41 times on average, so the budget reached new people instead of repeating to the same few.</p>
+            </div>
+        </article>
+
+        <!-- Al Salam search -->
+        <article class="sheet">
+            <div class="meta">
+                <span class="platform"><i></i>Google Ads · Search</span>
+                <h3>Search campaign for Al Salam</h3>
+                <dl>
+                    <dt>Client</dt><dd>Al Salam</dd>
+                    <dt>Ran</dt><dd>July 2026, 2 weeks</dd>
+                    <dt>Network</dt><dd>Google Search</dd>
+                </dl>
+            </div>
+            <div class="body">
+                <div class="stats">
+                    <div><span class="k">Clicks</span><span class="v">233</span></div>
+                    <div><span class="k">Impressions</span><span class="v">4.16K</span></div>
+                    <div><span class="k">Avg. CPC</span><span class="v hl">₹13.46</span></div>
+                    <div><span class="k">Cost</span><span class="v">₹3.14K</span></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- DCS search -->
+        <article class="sheet">
+            <div class="meta">
+                <span class="platform"><i></i>Google Ads · Search</span>
+                <h3>Global attestation services</h3>
+                <dl>
+                    <dt>Client</dt><dd>DCS, attestation services</dd>
+                    <dt>Ran</dt><dd>12 – 26 Oct 2026</dd>
+                    <dt>Budget</dt><dd class="mono">₹3,000 total</dd>
+                    <dt>Status</dt><dd><span class="status live">Live</span></dd>
+                </dl>
+                <p class="note">Figures run from 12 to 22 Oct 2026. The campaign is still running.</p>
+            </div>
+            <div class="body">
+                <div class="stats">
+                    <div><span class="k">Clicks</span><span class="v">58</span></div>
+                    <div><span class="k">Impressions</span><span class="v">773</span></div>
+                    <div><span class="k">CTR</span><span class="v hl">7.50%</span></div>
+                    <div><span class="k">Cost</span><span class="v">₹1.63K</span></div>
+                    <div><span class="k">Optimization score</span><span class="v">84.8%</span></div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="chart" role="img" aria-label="Click-through rate by Google Ads campaign: Performance Max 14.70 percent, DCS Search 7.50 percent, Al Salam Search 5.6 percent">
+        <span class="label">Click-through rate by Google Ads campaign</span>
+        <div class="row"><span class="name">DCS · Performance Max</span><span class="track"><span class="fill" style="width:91.9%"></span></span><span class="val">14.70%</span></div>
+        <div class="row"><span class="name">DCS · Search</span><span class="track"><span class="fill" style="width:46.9%"></span></span><span class="val">7.50%</span></div>
+        <div class="row"><span class="name">Al Salam · Search</span><span class="track"><span class="fill" style="width:35%"></span></span><span class="val">5.60%</span></div>
+        <p class="note">Al Salam Search CTR is worked out from 233 clicks over 4.16K impressions.</p>
+    </div>
+                        <p class="screen-end">You have reached the end of the campaign reports.</p>
+                    </div>
+                    <div class="laptop-bottom"><span>Scroll inside the screen to explore &#8595;</span><span class="screen-progress">0%</span></div>
+                </div>
+                <div class="laptop-keyboard" aria-hidden="true"><div class="gaming-keys"><div class="gaming-key-row"><span class="gaming-key">ESC</span><span class="gaming-key">F1</span><span class="gaming-key">F2</span><span class="gaming-key">F3</span><span class="gaming-key">F4</span><span class="gaming-key">F5</span><span class="gaming-key">F6</span><span class="gaming-key">F7</span><span class="gaming-key">F8</span><span class="gaming-key">F9</span><span class="gaming-key">F10</span><span class="gaming-key">F11</span><span class="gaming-key">F12</span></div><div class="gaming-key-row"><span class="gaming-key">~</span><span class="gaming-key">1</span><span class="gaming-key">2</span><span class="gaming-key">3</span><span class="gaming-key">4</span><span class="gaming-key">5</span><span class="gaming-key">6</span><span class="gaming-key">7</span><span class="gaming-key">8</span><span class="gaming-key">9</span><span class="gaming-key">0</span><span class="gaming-key">-</span><span class="gaming-key">=</span><span class="gaming-key">DEL</span></div><div class="gaming-key-row"><span class="gaming-key">TAB</span><span class="gaming-key">Q</span><span class="gaming-key">W</span><span class="gaming-key">E</span><span class="gaming-key">R</span><span class="gaming-key">T</span><span class="gaming-key">Y</span><span class="gaming-key">U</span><span class="gaming-key">I</span><span class="gaming-key">O</span><span class="gaming-key">P</span><span class="gaming-key">[</span><span class="gaming-key">]</span></div><div class="gaming-key-row"><span class="gaming-key key-wide">CAPS</span><span class="gaming-key">A</span><span class="gaming-key">S</span><span class="gaming-key">D</span><span class="gaming-key">F</span><span class="gaming-key">G</span><span class="gaming-key">H</span><span class="gaming-key">J</span><span class="gaming-key">K</span><span class="gaming-key">L</span><span class="gaming-key">;</span><span class="gaming-key key-wide">ENTER</span></div><div class="gaming-key-row"><span class="gaming-key key-wide">SHIFT</span><span class="gaming-key">Z</span><span class="gaming-key">X</span><span class="gaming-key">C</span><span class="gaming-key">V</span><span class="gaming-key">B</span><span class="gaming-key">N</span><span class="gaming-key">M</span><span class="gaming-key">,</span><span class="gaming-key">.</span><span class="gaming-key">/</span><span class="gaming-key">↑</span></div><div class="gaming-key-row"><span class="gaming-key key-wide">CTRL</span><span class="gaming-key">FN</span><span class="gaming-key">WIN</span><span class="gaming-key">ALT</span><span class="gaming-key key-space">SPACE</span><span class="gaming-key">ALT</span><span class="gaming-key">←</span><span class="gaming-key">↓</span><span class="gaming-key">→</span></div></div><span></span></div>
+                <div class="laptop-edge" aria-hidden="true"></div>
+                <div class="laptop-stand" aria-hidden="true"><i></i><b></b></div>
+            </div>
+            <button type="button" class="room-cup" aria-label="Refill coffee cup"><span class="coffee-surface"></span><span class="coffee-steam" aria-hidden="true"><i></i><i></i><i></i></span></button><button type="button" class="room-notebook" aria-label="Open handwritten notebook"><span aria-hidden="true"></span></button>
+            <div class="gaming-mat" aria-hidden="true"></div>
+            <button type="button" class="gaming-mouse" aria-label="Change gaming setup lighting color"><i></i><span></span></button>
+            <div class="gaming-headset" aria-hidden="true"><i></i><b></b></div>
+            <div class="room-desk" aria-hidden="true"></div>
+        </div>
+        <p class="room-help">Make yourself at home. Click the laptop, curtains or light switch to explore. <span>Esc to close.</span></p>
+        <div class="notebook-reader" hidden role="region" aria-label="Handwritten notebook">
+            <button type="button" class="notebook-close" aria-label="Close notebook">&#10005;</button>
+            <div class="notebook-spread"><div class="notebook-paper"><span class="notebook-date">From my desk</span><h3></h3><p></p><span class="notebook-page-number"></span></div></div>
+            <div class="notebook-navigation"><button type="button" class="notebook-prev" aria-label="Previous notebook page">&#8592;</button><span class="notebook-dots" aria-hidden="true"></span><button type="button" class="notebook-next" aria-label="Next notebook page">&#8594;</button></div>
+        </div>
+    </div>
+    </dialog>
+</div>
+</section>
+
+<!-- ================= TOOLKIT ================= -->
+<section id="toolkit">
+<div class="container">
+    <div class="sec-head rv"><div><div class="eyebrow">The creative lab</div><h2>Inside my toolkit</h2></div><p>A little strategy. A little creativity. Built to perform.</p></div>
+    <div class="toolkit-lab">
+        <div class="lab-scene" role="img" aria-label="Animated three-dimensional style robot building a marketing campaign at a workbench, surrounded by marketing tools">
+            <div class="lab-grid"></div>
+            <div class="lab-status"><span></span> CAMPAIGN WORKSHOP</div>
+            <div class="lab-orbit orbit-meta"><img src="assets/logos/meta.svg" alt="" width="34" height="34"><span>Meta Ads</span></div>
+            <div class="lab-orbit orbit-google"><img src="assets/logos/googleads.svg" alt="" width="34" height="34"><span>Google Ads</span></div>
+            <div class="lab-orbit orbit-analytics"><img src="assets/logos/googleanalytics.svg" alt="" width="34" height="34"><span>Analytics</span></div>
+            <div class="lab-orbit orbit-wordpress"><img src="assets/logos/wordpress.svg" alt="" width="34" height="34"><span>WordPress</span></div>
+            <div class="lab-platform"></div>
+            <div class="lab-bot">
+                <div class="bot-antenna"></div>
+                <div class="bot-head"><div class="bot-face"><b></b><b></b><span></span></div></div>
+                <div class="bot-body"><span>A</span></div>
+                <div class="bot-arm arm-left"></div><div class="bot-arm arm-right"></div>
+            </div>
+            <div class="lab-monitor"><div class="monitor-top"><span></span><span></span><span></span></div><div class="monitor-title">Campaign in the making</div><div class="monitor-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="monitor-lines"><i></i><i></i></div></div>
+            <div class="lab-desk"></div>
+            <div class="lab-caption"><span class="lab-spark"></span><span id="lab-task">Building smarter campaigns</span></div>
+        </div>
+        <div class="lab-intro">
+            <div class="eyebrow">Ideas into impact</div>
+            <h3>The right tools.<br><span>The human touch.</span></h3>
+            <p>From the first creative to the final conversion, I connect design, media and data to help your business grow.</p>
+            <div class="lab-modes" role="group" aria-label="Explore my workflow">
+                <button type="button" class="is-selected" data-lab-task="Building smarter campaigns" aria-pressed="true"><span>01</span> Plan &amp; launch <b>&#8599;</b></button>
+                <button type="button" data-lab-task="Crafting the next creative" aria-pressed="false"><span>02</span> Design &amp; create <b>&#8599;</b></button>
+                <button type="button" data-lab-task="Turning insights into growth" aria-pressed="false"><span>03</span> Measure &amp; improve <b>&#8599;</b></button>
+            </div>
+            <button class="lab-motion" type="button" aria-pressed="false">Pause animation</button>
+        </div>
+    </div>
+    <div class="two toolkit-details">
+        <div class="panel rv">
+            <h3>Paid media and analytics</h3>
+            <div class="chips"><span>Meta Ads Manager</span><span>Google Ads</span><span>Performance Max</span><span>Google Analytics</span><span>Meta Pixel</span><span>SEO</span><span>SEM</span><span>Email marketing</span><span>A/B testing</span></div>
+        </div>
+        <div class="panel rv">
+            <h3>Creative and web</h3>
+            <div class="chips"><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Canva</span><span>WordPress</span><span>Elementor</span><span>Website design</span><span>Photography</span><span>Copywriting</span></div>
+        </div>
+        <div class="panel rv">
+            <h3>How I work</h3>
+            <p>Campaigns start with a defined audience and a tracked conversion. Daily budgets, bids and audience segments are then adjusted from live data, and ad creatives, copy and landing page elements are tested against each other so the better version stays.</p>
+        </div>
+        <div class="panel rv">
+            <h3>Languages</h3>
+            <div class="chips"><span>Malayalam</span></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ================= CAREER ================= -->
+<section id="career">
+<div class="container">
+    <div class="sec-head rv"><div><div class="eyebrow">Experience in motion</div><h2>A journey of creating<br>and growing.</h2></div><div class="career-head-note"><p>From design foundations to campaigns that perform.</p><button type="button" class="career-motion" aria-pressed="false">Pause animation</button></div></div>
+    <div class="log career-timeline">
+        <article class="entry career-card rv" style="--career-index:0"><div class="career-art"><span class="career-chapter">01 / THE JOURNEY</span><svg viewBox="0 0 360 290" role="img" aria-label="Campaign analytics and growth dashboard"><defs><linearGradient id="glow0" x2="0" y2="1"><stop stop-color="#9edbff"/><stop offset="1" stop-color="#3578ce"/></linearGradient></defs><ellipse cx="180" cy="251" rx="128" ry="17" fill="#030c21" opacity=".45"/><rect x="62" y="65" width="226" height="148" rx="16" fill="#10264b" stroke="#608bc3" stroke-width="3"/><rect x="77" y="80" width="196" height="118" rx="8" fill="#07162f"/><path d="M110 180V153M145 180V133M180 180V146M215 180V113M248 180V98" stroke="url(#glow0)" stroke-width="17" class="career-bars"/><path d="M103 140l40-28 38 10 64-43" fill="none" stroke="#93f0d4" stroke-width="3" stroke-linecap="round" class="career-line"/><path d="M158 214v18h-43m43 0h75" stroke="#536f97" stroke-width="9" stroke-linecap="round"/><g class="career-float"><rect x="235" y="37" width="82" height="43" rx="12" fill="#1c4b7d" stroke="#4f9ad9"/><path d="m251 62 12-10 10 6 22-12m-8 0h8v8" fill="none" stroke="#a0f3dc" stroke-width="3"/></g><circle cx="63" cy="202" r="23" fill="#1b3e67"/><path d="m53 202 7 7 13-15" stroke="#8ee4d0" stroke-width="3" fill="none"/></svg><span class="career-art-label">Paid media / Analytics</span></div><div class="career-copy">
+            <div class="when">Current</div>
+            <div>
+                <h3>Performance Marketer</h3>
+                <p class="org">Rainhopes</p>
+                <details class="career-responsibilities" open><summary>Explore this role <span aria-hidden="true">+</span></summary><ul>
+                    <li>Plan and launch paid campaigns on Meta and Google Ads for client businesses across industries, aimed at qualified audiences to generate leads and measurable conversions.</li>
+                    <li>Adjust daily budgets, bids and audience segments from live performance data to improve cost per lead, conversion rate and return on ad spend.</li>
+                    <li>Test creatives, copy and landing page elements in structured A/B experiments to find the combinations that lift click-through rate.</li>
+                    <li>Set up conversion tracking with Meta Pixel and Google Analytics so leads, online sales and results are attributed correctly on every paid channel.</li>
+                </ul></details>
+            </div>
+</div></article>
+        <article class="entry career-card rv" style="--career-index:1"><div class="career-art"><span class="career-chapter">02 / THE JOURNEY</span><svg viewBox="0 0 360 290" role="img" aria-label="Digital marketing classroom and training"><defs><linearGradient id="glow1" x2="0" y2="1"><stop stop-color="#9edbff"/><stop offset="1" stop-color="#3578ce"/></linearGradient></defs><ellipse cx="180" cy="251" rx="128" ry="17" fill="#030c21" opacity=".45"/><rect x="81" y="48" width="220" height="142" rx="12" fill="#10284c" stroke="#6582ad" stroke-width="3"/><path d="M108 76h70m-70 15h42" stroke="#77b9f3" stroke-width="5" stroke-linecap="round"/><circle cx="241" cy="103" r="28" fill="none" stroke="#4565a2" stroke-width="9"/><path d="M241 75a28 28 0 0 1 25 41" fill="none" stroke="#8fe2d4" stroke-width="9" class="career-line"/><path d="m109 155 24-28 24 16 28-35" fill="none" stroke="#899eff" stroke-width="4"/><path d="M187 190v37m-35 0h71" stroke="#4c648d" stroke-width="7"/><g fill="#b1c9f0"><circle cx="90" cy="210" r="14"/><circle cx="151" cy="216" r="14"/><circle cx="260" cy="210" r="14"/></g><g fill="#304b7d"><path d="M63 253v-15a27 27 0 0 1 54 0v15M124 259v-15a27 27 0 0 1 54 0v15M233 253v-15a27 27 0 0 1 54 0v15"/></g><g class="career-float"><path d="m57 56 29-13 29 13-29 13z" fill="#92baff"/><path d="M70 63v15q16 13 32 0V63" fill="#597db7"/></g></svg><span class="career-art-label">Teaching / SEO</span></div><div class="career-copy">
+            <div class="when">2025 – 2026</div>
+            <div>
+                <h3>Digital Marketing Tutor</h3>
+                <p class="org">Sree Sankaracharya Computer Centre, Manjeri</p>
+                <details class="career-responsibilities"><summary>Explore this role <span aria-hidden="true">+</span></summary><ul>
+                    <li>Taught digital marketing fundamentals across all core channels, audience targeting and campaign planning, aimed at job-ready practical skills.</li>
+                    <li>Trained students in SEO, including keyword research, on-page optimization and content structuring.</li>
+                    <li>Taught social media marketing: content calendars, platform strategy and engagement tactics.</li>
+                </ul></details>
+            </div>
+</div></article>
+        <article class="entry career-card rv" style="--career-index:2"><div class="career-art"><span class="career-chapter">03 / THE JOURNEY</span><svg viewBox="0 0 360 290" role="img" aria-label="Connected campaign planning and strategy"><defs><linearGradient id="glow2" x2="0" y2="1"><stop stop-color="#9edbff"/><stop offset="1" stop-color="#3578ce"/></linearGradient></defs><ellipse cx="180" cy="251" rx="128" ry="17" fill="#030c21" opacity=".45"/><g class="career-float"><rect x="73" y="44" width="97" height="116" rx="12" fill="#1b365b" stroke="#5d8dc7"/><rect x="84" y="57" width="75" height="52" rx="6" fill="#295b94"/><circle cx="110" cy="77" r="9" fill="#8eace9"/><path d="m86 106 25-21 18 14 12-9 17 17" fill="#5285b8"/><path d="M88 124h62m-62 13h42" stroke="#8baed4" stroke-width="4" stroke-linecap="round"/></g><rect x="197" y="112" width="88" height="102" rx="12" fill="#1a3156" stroke="#6382b3"/><path d="M210 133h37m-37 13h57" stroke="#8baed4" stroke-width="4" stroke-linecap="round"/><path d="m217 185 13-14 12 8 24-25" fill="none" stroke="#9eecd5" stroke-width="4"/><path d="M177 96h56v14M191 190h-50v-22" stroke="#668fe3" stroke-width="3" stroke-dasharray="5 6" class="career-flow"/><circle cx="121" cy="217" r="24" fill="#274b78"/><path d="m110 217 8 8 14-17" stroke="#a8f2dd" stroke-width="3" fill="none"/><g fill="#526fa0"><circle cx="291" cy="70" r="7"/><circle cx="310" cy="88" r="4"/></g></svg><span class="career-art-label">Strategy / Social media</span></div><div class="career-copy">
+            <div class="when">2023 – 2025</div>
+            <div>
+                <h3>Digital Marketing Manager</h3>
+                <p class="org">Axestor Advertising</p>
+                <details class="career-responsibilities"><summary>Explore this role <span aria-hidden="true">+</span></summary><ul>
+                    <li>Directed social media campaigns across multiple platforms with consistent posting schedules and platform-specific content.</li>
+                    <li>Built digital marketing strategies that tied campaign goals to audience behavior, brand positioning and business targets across paid and organic channels.</li>
+                    <li>Handled content end to end: copywriting, graphic design and visual planning.</li>
+                </ul></details>
+            </div>
+</div></article>
+        <article class="entry career-card rv" style="--career-index:3"><div class="career-art"><span class="career-chapter">04 / THE JOURNEY</span><svg viewBox="0 0 360 290" role="img" aria-label="Creative artwork and graphic design tools"><defs><linearGradient id="glow3" x2="0" y2="1"><stop stop-color="#9edbff"/><stop offset="1" stop-color="#3578ce"/></linearGradient></defs><ellipse cx="180" cy="251" rx="128" ry="17" fill="#030c21" opacity=".45"/><g transform="rotate(-9 180 145)"><rect x="91" y="49" width="176" height="194" rx="11" fill="#142b4f" stroke="#6284b5" stroke-width="3"/><rect x="106" y="65" width="146" height="117" rx="5" fill="#294c7c"/><circle cx="210" cy="101" r="24" fill="#93c0e8"/><path d="m106 169 43-54 34 40 29-23 40 44v6H106" fill="#6887c0"/><path d="m106 176 47-33 31 30 30-18 38 23v4H106" fill="#426899"/><path d="M111 201h104m-104 16h69" stroke="#7996bb" stroke-width="5" stroke-linecap="round"/></g><g class="career-float"><path d="m264 63 17 8-50 117-20 22 2-30z" fill="#b7b3f7"/><path d="m211 210 5-20 10 5z" fill="#7283b4"/><path d="m264 63 6-14q4-8 12-4t5 13l-6 13" fill="#7c86ce"/></g><circle cx="75" cy="201" r="22" fill="#2d466c"/><g fill="#a8b7ea"><circle cx="67" cy="195" r="4"/><circle cx="80" cy="190" r="4"/><circle cx="85" cy="202" r="4"/></g></svg><span class="career-art-label">Design / Creative</span></div><div class="career-copy">
+            <div class="when">6 months</div>
+            <div>
+                <h3>Graphic Design Trainee</h3>
+                <p class="org">Popees Baby Care Products</p>
+                <details class="career-responsibilities"><summary>Explore this role <span aria-hidden="true">+</span></summary><ul>
+                    <li>Created ad visuals and layouts for baby care products, consistent with brand guidelines.</li>
+                    <li>Designed print and digital advertising layouts in Adobe Illustrator and Photoshop.</li>
+                </ul></details>
+            </div>
+</div></article>
+    </div>
+</div>
+</section>
+
+<!-- ================= CERTIFICATIONS / EDUCATION ================= -->
+<section id="learning" aria-label="Certifications and education">
+<div class="container">
+    <div class="certificate-board">
+        <div class="board-rail" aria-hidden="true"></div>
+        <figure class="hanging-certificate certificate-one">
+            <div class="certificate-cord" aria-hidden="true"></div>
+            <div class="certificate-frame"><div class="certificate-paper">
+                <div class="certificate-institution">CDA <span>ACADEMY</span></div>
+                <div class="certificate-rule" aria-hidden="true"></div>
+                <div class="certificate-category">Professional development</div>
+                <h3>Performance<br>Marketing</h3>
+                <p class="certificate-name">Muhammed Anas A.V</p>
+                <div class="certificate-footer"><span>CDA Academy</span><b>2026</b></div>
+            </div></div>
+            <figcaption>Performance Marketing · CDA Academy · 2026</figcaption>
+        </figure>
+        <figure class="hanging-certificate certificate-two">
+            <div class="certificate-cord" aria-hidden="true"></div>
+            <div class="certificate-frame"><div class="certificate-paper">
+                <div class="certificate-institution">LAL <span>MEDIA ACADEMY</span></div>
+                <div class="certificate-rule" aria-hidden="true"></div>
+                <div class="certificate-category">Diploma</div>
+                <h3>Digital<br>Marketing</h3>
+                <p class="certificate-name">Muhammed Anas A.V</p>
+                <div class="certificate-footer"><span>Lal Media Academy</span><b>2023</b></div>
+            </div></div>
+            <figcaption>Diploma in Digital Marketing · Lal Media Academy · 2023</figcaption>
+        </figure>
+    </div>
+    <div class="education-record"><span>Plus Two, Humanities <small>NIOS · 2022–2023</small></span><i aria-hidden="true"></i><span>SSLC <small>KMHSS Karulai · 2016–2017</small></span></div>
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+<div class="container">
+    <div class="contact rv">
+        <h2>Let's <span>work together</span></h2>
+        <p>Have a business that needs more leads? Message me on WhatsApp and we'll talk about your goals.</p>
+        <a href="https://wa.me/919645376915" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
+        <div class="rows">
+            <div class="line"><span class="k">Email</span><span class="v" id="email">lalua785@gmail.com</span><button class="copy" type="button" data-target="email">Copy</button></div>
+            <div class="line"><span class="k">Phone</span><span class="v" id="phone">9645376915</span><button class="copy" type="button" data-target="phone">Copy</button></div>
+            <div class="line"><span class="k">Based in</span><span class="v">Malappuram, Kerala</span></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer>
+    © 2026 Muhammed Anas A.V. All Rights Reserved.<br>
+    Campaign figures come from Google Ads and Meta Ads Manager dashboards, as of 22 October 2026.
+</footer>
+
+<a class="wa" href="https://wa.me/919645376915" target="_blank">💬 WhatsApp</a>
+
+<script>
+document.documentElement.classList.add('js');
+
+// scroll reveal
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}
+})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+// Services: slide, then hold the highlighted card for one second.
+(function(){
+    const carousel=document.querySelector('.services-carousel');
+    const track=carousel.querySelector('.services-track');
+    const cards=Array.from(track.children);
+    const pause=carousel.querySelector('[data-service="pause"]');
+    const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+    let index=0,timer,settle,paused=reduced.matches,visible=false;
+    function highlight(i){
+        index=i;
+        cards.forEach((card,n)=>card.classList.toggle('is-active',n===i));
+        carousel.querySelector('.services-count').textContent=String(i+1).padStart(2,'0')+' / 06';
+    }
+    function schedule(){
+        clearTimeout(timer);
+        if(!paused&&visible&&!document.hidden)timer=setTimeout(()=>move(1),1000);
+    }
+    function move(direction){
+        clearTimeout(timer);
+        highlight((index+direction+cards.length)%cards.length);
+        track.scrollTo({left:cards[index].offsetLeft-cards[0].offsetLeft,behavior:reduced.matches?'instant':'smooth'});
+        clearTimeout(settle);settle=setTimeout(schedule,450);
+    }
+    track.addEventListener('scroll',()=>{
+        clearTimeout(timer);clearTimeout(settle);
+        settle=setTimeout(()=>{
+            const max=track.scrollWidth-track.clientWidth;
+            const distances=cards.map(card=>Math.abs(Math.min(card.offsetLeft-cards[0].offsetLeft,max)-track.scrollLeft));
+            if(distances[index]>2)highlight(distances.indexOf(Math.min(...distances)));
+            schedule();
+        },150);
+    },{passive:true});
+    carousel.querySelector('[data-service="prev"]').addEventListener('click',()=>move(-1));
+    carousel.querySelector('[data-service="next"]').addEventListener('click',()=>move(1));
+    function updatePause(){pause.textContent=paused?'Play':'Pause';pause.setAttribute('aria-label',paused?'Start automatic scrolling':'Pause automatic scrolling');schedule()}
+    pause.addEventListener('click',()=>{paused=!paused;updatePause()});
+    track.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(e.key==='ArrowRight'?1:-1)}});
+    document.addEventListener('visibilitychange',schedule);
+    reduced.addEventListener('change',()=>{paused=reduced.matches;updatePause()});
+    new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;schedule()},{threshold:.2}).observe(carousel);
+    highlight(0);updatePause();
+})();
+
+// Explore the toolkit workshop.
+document.querySelectorAll('[data-lab-task]').forEach(function(button){
+    button.addEventListener('click',function(){
+        document.querySelectorAll('[data-lab-task]').forEach(function(item){
+            item.classList.toggle('is-selected',item===button);
+            item.setAttribute('aria-pressed',String(item===button));
+        });
+        document.getElementById('lab-task').textContent=button.dataset.labTask;
+        document.querySelector('.monitor-title').textContent=button.textContent.includes('02')?'Creative in the making':button.textContent.includes('03')?'Insights into action':'Campaign in the making';
+    });
+});
+var labMotion=document.querySelector('.lab-motion');
+labMotion.addEventListener('click',function(){
+    var paused=document.querySelector('.toolkit-lab').classList.toggle('is-paused');
+    labMotion.textContent=paused?'Play animation':'Pause animation';
+    labMotion.setAttribute('aria-pressed',String(paused));
+});
+
+// Interactive results room. Native screen scrolling keeps page scrolling available at either end.
+(function(){
+    const room=document.querySelector('.results-room');
+    const screen=document.getElementById('results-display');
+    const expand=room.querySelector('.room-expand');
+    const light=room.querySelector('.room-light');
+    const dialog=document.getElementById('campaign-room');
+    const entry=document.querySelector('.room-entry');
+    const curtains=room.querySelector('.room-curtain-toggle');
+    const wallSwitch=room.querySelector('.wall-switch');
+    const cord=room.querySelector('.lamp-cord');
+    const reader=room.querySelector('.notebook-reader');
+    const book=room.querySelector('.room-notebook');
+    const paper=room.querySelector('.notebook-paper');
+    const pages=[
+        {title:'Start with a purpose.',text:'Who are we trying to reach?\nWhat should happen next?\n\nA clear audience. A tracked conversion. Then we build the campaign around it.'},
+        {title:'Find the right people.',text:'Meta Ads + Google Ads\nPerformance Max + Search\n\nTest the audience, watch the budget, and give every lead a path back to its campaign.'},
+        {title:'Make something that connects.',text:'Photoshop. Illustrator. Canva.\nWordPress + Elementor.\n\nA thoughtful visual, a few clear words, and a page that makes the next step easy.'},
+        {title:'Keep learning. Keep improving.',text:'Google Analytics + Meta Pixel\nCreative tests + better landing pages\n\nRead the data. Adjust the bids. Try a new idea. Let the results guide the next move.'}
+    ];
+    let page=0,swipeX=null,coffeeTimer;
+    function renderPage(){
+        paper.querySelector('h3').textContent=pages[page].title;
+        paper.querySelector('p').textContent=pages[page].text;
+        paper.querySelector('.notebook-page-number').textContent=String(page+1).padStart(2,'0');
+        reader.querySelector('.notebook-dots').textContent=pages.map((_,i)=>i===page?'●':'○').join('');
+        reader.querySelector('.notebook-prev').disabled=page===0;
+        reader.querySelector('.notebook-next').disabled=page===pages.length-1;
+        paper.classList.remove('page-turn');void paper.offsetWidth;paper.classList.add('page-turn');
+    }
+    function turnPage(direction){page=Math.max(0,Math.min(pages.length-1,page+direction));renderPage()}
+    function setBook(open){
+        reader.hidden=!open;
+        ['.room-workspace','.room-curtains','.wall-switch','.room-toolbar'].forEach(selector=>room.querySelector(selector).inert=open);
+        if(open){renderPage();reader.querySelector('.notebook-close').focus({preventScroll:true})}
+        else book.focus({preventScroll:true});
+    }
+    book.addEventListener('click',()=>setBook(true));
+    reader.querySelector('.notebook-close').addEventListener('click',()=>setBook(false));
+    reader.querySelector('.notebook-prev').addEventListener('click',()=>turnPage(-1));
+    reader.querySelector('.notebook-next').addEventListener('click',()=>turnPage(1));
+    reader.addEventListener('click',event=>{if(event.target===reader)setBook(false)});
+    const spread=reader.querySelector('.notebook-spread');
+    spread.addEventListener('pointerdown',event=>{swipeX=event.clientX;spread.setPointerCapture(event.pointerId)});
+    spread.addEventListener('pointerup',event=>{
+        if(swipeX!==null&&Math.abs(event.clientX-swipeX)>35)turnPage(event.clientX<swipeX?1:-1);
+        swipeX=null;
+    });
+    spread.addEventListener('pointercancel',()=>{swipeX=null});
+    reader.addEventListener('keydown',event=>{
+        if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();turnPage(event.key==='ArrowRight'?1:-1)}
+    });
+    room.querySelectorAll('.room-curtains button').forEach((curtain,i)=>curtain.addEventListener('click',function(){
+        const closed=curtain.classList.toggle('is-closed');
+        curtain.setAttribute('aria-pressed',String(closed));
+        curtain.setAttribute('aria-label',(closed?'Open ':'Close ')+(i===0?'left':'right')+' curtain');
+    }));
+    cord.addEventListener('click',function(){
+        const on=room.classList.toggle('lamp-on');
+        cord.setAttribute('aria-pressed',String(on));
+        cord.setAttribute('aria-label',on?'Pull cord to turn lamp bulb off':'Pull cord to turn lamp bulb on');
+    });
+    let gamingColor=0;
+    const gamingColors=['#51a7ff','#a38bff','#55e0c0','#ff7cbb'];
+    room.querySelector('.gaming-mouse').addEventListener('click',function(){
+        gamingColor=(gamingColor+1)%gamingColors.length;
+        room.style.setProperty('--gaming-rgb',gamingColors[gamingColor]);
+    });
+    room.querySelector('.laptop-shut').addEventListener('click',function(){expand.click();room.querySelector('.laptop-open').focus({preventScroll:true})});
+    const coffee=room.querySelector('.room-cup');
+    coffee.addEventListener('click',function(){
+        clearTimeout(coffeeTimer);coffee.classList.remove('is-refilling');void coffee.offsetWidth;
+        coffee.classList.add('is-refilling');coffeeTimer=setTimeout(()=>coffee.classList.remove('is-refilling'),850);
+    });
+    let previousOverflow='';
+    screen.inert=true;
+    entry.addEventListener('click',function(){
+        previousOverflow=document.body.style.overflow;
+        document.body.style.overflow='hidden';
+        dialog.showModal();
+        progress();
+    });
+    room.querySelector('.room-close').addEventListener('click',()=>dialog.close());
+    dialog.addEventListener('close',function(){
+        if(!reader.hidden)setBook(false);
+        document.body.style.overflow=previousOverflow;
+        entry.focus({preventScroll:true});
+    });
+    dialog.addEventListener('cancel',function(event){
+        if(!reader.hidden){event.preventDefault();setBook(false)}
+        else if(room.classList.contains('screen-enlarged')){
+            event.preventDefault();expand.click();expand.focus({preventScroll:true});
+        }
+    });
+    curtains.addEventListener('click',function(){
+        const closed=room.classList.toggle('curtains-closed');
+        curtains.textContent=closed?'Open curtains':'Close curtains';
+        curtains.setAttribute('aria-pressed',String(closed));
+    });
+    wallSwitch.addEventListener('click',()=>light.click());
+    room.querySelector('.laptop-open').addEventListener('click',function(){
+        if(!room.classList.contains('screen-enlarged'))expand.click();
+        screen.focus({preventScroll:true});
+    });
+    function progress(){
+        const range=screen.scrollHeight-screen.clientHeight;
+        room.querySelector('.screen-progress').textContent=(range>0?Math.round(screen.scrollTop/range*100):100)+'%';
+    }
+    screen.addEventListener('scroll',progress,{passive:true});
+    window.addEventListener('resize',progress);
+    expand.addEventListener('click',function(){
+        const enlarged=room.classList.toggle('screen-enlarged');
+        expand.textContent=enlarged?'Close laptop view ↙':'Open laptop ↗';
+        expand.setAttribute('aria-expanded',String(enlarged));
+        screen.inert=!enlarged;
+        progress();
+    });
+    light.addEventListener('click',function(){
+        const on=room.classList.toggle('lights-on');
+        light.textContent=on?'Lights off':'Lights on';
+        light.setAttribute('aria-pressed',String(on));
+        wallSwitch.setAttribute('aria-pressed',String(on));
+        wallSwitch.setAttribute('aria-label',on?'Turn room light off':'Turn room light on');
+    });
+    room.querySelectorAll('[data-report]').forEach(function(button){
+        button.addEventListener('click',function(){
+            const report=screen.querySelectorAll('.sheet')[Number(button.dataset.report)];
+            if(!report)return;
+            const top=report.getBoundingClientRect().top-screen.getBoundingClientRect().top+screen.scrollTop-16;
+            screen.scrollTo({top:top,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+            screen.focus({preventScroll:true});
+        });
+    });
+    progress();
+})();
+
+// Animate career illustrations only while their cards are visible.
+(function(){
+    const career=document.getElementById('career');
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+        entry.target.classList.toggle('is-in-view',entry.isIntersecting);
+    }),{threshold:.15});
+    career.querySelectorAll('.career-card').forEach(card=>observer.observe(card));
+    const motion=career.querySelector('.career-motion');
+    motion.addEventListener('click',function(){
+        const paused=career.classList.toggle('career-paused');
+        motion.textContent=paused?'Play animation':'Pause animation';
+        motion.setAttribute('aria-pressed',String(paused));
+    });
+})();
+
+// copy buttons
+document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click',function(){
+        var el=document.getElementById(btn.dataset.target);
+        var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1600)};
+        var fallback=function(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r)};
+        try{navigator.clipboard.writeText(el.textContent).then(done,fallback)}catch(e){fallback()}
+    });
+});
+</script>
+</body>
+</html>
